@@ -20,4 +20,5 @@ Solving Leetcode problems with Rust.
 - [9. Palindrome Number `Easy`](./src/p0001_p1000/p9/palindrome_number.rs)
 - [73. Set Matrix Zeroes `Medium`](./src/p0001_p1000/p73/set_matrix_zeroes.rs)
 - [125. Valid Palindrome `Easy`](./src/p0001_p1000/p125/valid_palindrome.rs)
+- [2942. Find Words Containing Character `Easy`](./src/p2001_p3000/p2942/find_words_containing_characters.rs)
 - [3024. Type of Triangle `Easy`](./src/p3001_p4000/)
