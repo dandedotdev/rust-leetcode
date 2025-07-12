@@ -5,3 +5,4 @@ pub mod p73;
 
 pub mod p125;
 pub mod p217;
+pub mod p242;
