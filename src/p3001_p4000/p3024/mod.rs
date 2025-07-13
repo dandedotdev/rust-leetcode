@@ -1,1 +1,1 @@
-pub mod type_of_triangle;
+mod type_of_triangle;

@@ -1,1 +1,1 @@
-pub mod p2942;
+mod p2942;

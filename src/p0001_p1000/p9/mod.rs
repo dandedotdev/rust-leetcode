@@ -1,1 +1,1 @@
-pub mod palindrome_number;
+mod palindrome_number;

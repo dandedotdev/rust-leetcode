@@ -1,1 +1,1 @@
-pub mod find_words_containing_characters;
+mod find_words_containing_characters;

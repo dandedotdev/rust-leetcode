@@ -1,1 +1,1 @@
-pub mod valid_anagram;
+mod valid_anagram;

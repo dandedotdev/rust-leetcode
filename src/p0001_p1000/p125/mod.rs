@@ -1,2 +1,2 @@
-pub mod valid_palindrome;
-pub mod valid_palindrome_i;
+mod valid_palindrome;
+mod valid_palindrome_i;

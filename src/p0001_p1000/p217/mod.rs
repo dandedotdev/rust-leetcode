@@ -1,1 +1,1 @@
-pub mod contains_duplicate;
+mod contains_duplicate;

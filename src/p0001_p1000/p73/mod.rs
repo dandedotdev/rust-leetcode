@@ -1,1 +1,1 @@
-pub mod set_matrix_zeroes;
+mod set_matrix_zeroes;

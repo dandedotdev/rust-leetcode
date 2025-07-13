@@ -1,1 +1,1 @@
-pub mod group_anagrams;
+mod group_anagrams;
