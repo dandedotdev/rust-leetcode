@@ -25,6 +25,7 @@ Solving Leetcode problems with Rust.
 - [217. Contains Duplicate `Easy`](./src/p0001_p1000/p217/contains_duplicate.rs)
 - [242. Valid Anagram `Easy`](./src/p0001_p1000/p242/valid_anagram.rs)
 - [347. Top K Frequent Elements `Medium`](./src/p0001_p1000/p347/top_k_frequent_elements.rs)
+- [1290. Convert Binary Number in a Linked List to Integer `Easy`](./src/p1001_p2000/p1290/convert_binary_number_in_a_linked_list_to_integer.rs)
 - [2942. Find Words Containing Character `Easy`](./src/p2001_p3000/p2942/find_words_containing_characters.rs)
 - [3024. Type of Triangle `Easy`](./src/p3001_p4000/p3024/type_of_triangle.rs)
 - [3423. Maximum Difference Between Adjacent Elements in a Circular Array `Easy`](./src/p3001_p4000/p3423/maximum_difference_between_adjacent_elements_in_a_circular_array.rs)
