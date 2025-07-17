@@ -22,6 +22,7 @@ Solving Leetcode problems with Rust.
 - [49. Group Anagrams `Medium`](./src/p0001_p1000/p49/group_anagrams.rs)
 - [73. Set Matrix Zeroes `Medium`](./src/p0001_p1000/p73/set_matrix_zeroes.rs)
 - [125. Valid Palindrome `Easy`](./src/p0001_p1000/p125/valid_palindrome.rs)
+- [128. Longest Consecutive Sequence `Medium`](./src/p0001_p1000/p128/longest_consecutive_sequence.rs)
 - [217. Contains Duplicate `Easy`](./src/p0001_p1000/p217/contains_duplicate.rs)
 - [238. Product of Array Except Self `Medium`](./src/p0001_p1000/p238/product_of_array_except_self.rs)
 - [242. Valid Anagram `Easy`](./src/p0001_p1000/p242/valid_anagram.rs)
