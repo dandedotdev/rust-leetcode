@@ -1,11 +1,11 @@
 // <Array, Sorting>
 // Time: O(n)
-// Space: O(n)
+// Space: O(1)
 
 pub struct Solution;
 
 impl Solution {
-    pub fn longest_consecutive(nums: Vec<i32>) -> i32 {
+    pub fn longest_consecutive(mut nums: Vec<i32>) -> i32 {
         if nums.is_empty() {
             return 0;
         }
@@ -13,9 +13,7 @@ impl Solution {
         let mut current = 1;
         let mut max = 0;
 
-        let mut nums = nums.clone();
-
-        nums.sort();
+        nums.sort_unstable();
 
         for i in 1..nums.len() {
             if nums[i - 1] == nums[i] {
