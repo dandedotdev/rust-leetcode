@@ -31,6 +31,7 @@ Solving Leetcode problems with Rust.
 - [217. Contains Duplicate `Easy`](./src/p0001_p1000/p217/contains_duplicate.rs)
 - [238. Product of Array Except Self `Medium`](./src/p0001_p1000/p238/product_of_array_except_self.rs)
 - [242. Valid Anagram `Easy`](./src/p0001_p1000/p242/valid_anagram.rs)
+- [271. Encode and Decode Strings `Medium`](./src/p0001_p1000/p271/encode_and_decode_strings.rs)
 - [347. Top K Frequent Elements `Medium`](./src/p0001_p1000/p347/top_k_frequent_elements.rs)
 - [1290. Convert Binary Number in a Linked List to Integer `Easy`](./src/p1001_p2000/p1290/convert_binary_number_in_a_linked_list_to_integer.rs)
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)
