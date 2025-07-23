@@ -5,6 +5,7 @@ mod p9;
 
 mod p11;
 mod p15;
+mod p36;
 mod p49;
 mod p73;
 

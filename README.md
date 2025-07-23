@@ -23,6 +23,7 @@ Solving Leetcode problems with Rust.
 - [9. Palindrome Number `Easy`](./src/p0001_p1000/p9/palindrome_number.rs)
 - [11. Container With Most Water `Medium`](./src/p0001_p1000/p11/container_with_most_water.rs)
 - [15. 3Sum `Medium`](./src/p0001_p1000/p15/three_sum.rs)
+- [36. Valid Sudoku `Medium`](./src/p0001_p1000/p36/valid_sudoku.rs)
 - [49. Group Anagrams `Medium`](./src/p0001_p1000/p49/group_anagrams.rs)
 - [73. Set Matrix Zeroes `Medium`](./src/p0001_p1000/p73/set_matrix_zeroes.rs)
 - [121. Best Time to Buy and Sell Stock `Easy`](./src/p0001_p1000/p121/best_time_to_buy_and_sell_stock.rs)
