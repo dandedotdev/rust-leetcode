@@ -23,7 +23,7 @@ mod tests {
         let nums = vec![1, 2, 3, 1];
         let result = Solution::contains_duplicate(nums);
 
-        assert_eq!(result, true);
+        assert!(result);
     }
 
     #[test]
@@ -31,7 +31,7 @@ mod tests {
         let nums = vec![1, 2, 3, 4];
         let result = Solution::contains_duplicate(nums);
 
-        assert_eq!(result, false);
+        assert!(!result);
     }
 
     #[test]
@@ -39,6 +39,6 @@ mod tests {
         let nums = vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
         let result = Solution::contains_duplicate(nums);
 
-        assert_eq!(result, true);
+        assert!(result);
     }
 }

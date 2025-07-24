@@ -27,7 +27,7 @@ mod tests {
         let x = 121;
         let result = Solution::is_palindrome(x);
 
-        assert_eq!(result, true);
+        assert!(result);
     }
 
     #[test]
@@ -35,7 +35,7 @@ mod tests {
         let x = -121;
         let result = Solution::is_palindrome(x);
 
-        assert_eq!(result, false);
+        assert!(!result);
     }
 
     #[test]
@@ -43,6 +43,6 @@ mod tests {
         let x = 10;
         let result = Solution::is_palindrome(x);
 
-        assert_eq!(result, false);
+        assert!(!result);
     }
 }

@@ -36,7 +36,7 @@ mod tests {
         let t = "nagaram".to_string();
         let result = Solution::is_anagram(s, t);
 
-        assert_eq!(result, true);
+        assert!(result);
     }
 
     #[test]
@@ -45,6 +45,6 @@ mod tests {
         let t = "car".to_string();
         let result = Solution::is_anagram(s, t);
 
-        assert_eq!(result, false);
+        assert!(!result);
     }
 }
