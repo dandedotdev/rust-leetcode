@@ -10,7 +10,7 @@ impl Solution {
     pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
         let mut row = [0u16; 9];
         let mut col = [0u16; 9];
-        let mut boxs = [0u16; 9];
+        let mut boxes = [0u16; 9];
 
         for (r, row_vec) in board.iter().enumerate() {
             for (c, &char) in row_vec.iter().enumerate() {
@@ -18,13 +18,13 @@ impl Solution {
                     let bit = 1 << d;
                     let box_index = (r / 3) * 3 + (c / 3);
 
-                    if (row[r] & bit) != 0 || (col[c] & bit) != 0 || (boxs[box_index] & bit) != 0 {
+                    if (row[r] & bit) != 0 || (col[c] & bit) != 0 || (boxes[box_index] & bit) != 0 {
                         return false;
                     }
 
                     row[r] |= bit;
                     col[c] |= bit;
-                    boxs[box_index] |= bit;
+                    boxes[box_index] |= bit;
                 }
             }
         }
