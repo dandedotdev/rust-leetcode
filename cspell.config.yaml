@@ -1,0 +1,13 @@
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+version: "0.2"
+ignorePaths: [".gitignore", "*.lock", "target"]
+dictionaryDefinitions: []
+dictionaries: []
+words:
+  [
+    "huahua's",
+    "leetcode",
+    "neet",
+    "nums",
+    "subarray"
+  ]
