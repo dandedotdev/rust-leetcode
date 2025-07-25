@@ -42,3 +42,4 @@ Solving Leetcode problems with Rust.
 - [3136. Valid Word `Easy`](./src/p3001_p4000/p3136/valid_word.rs)
 - [3423. Maximum Difference Between Adjacent Elements in a Circular Array `Easy`](./src/p3001_p4000/p3423/maximum_difference_between_adjacent_elements_in_a_circular_array.rs)
 - [3442. Maximum Difference Between Even and Odd Frequency I `Easy`](./src/p3001_p4000/p3442/maximum_difference_between_even_and_odd_frequency_i.rs)
+- [3487. Maximum Unique Subarray Sum After Deletion `Easy`](./src/p3001_p4000/p3487/maximum_unique_subarray_sum_after_deletion.rs)
