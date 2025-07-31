@@ -6,7 +6,7 @@ pub struct Solution;
 
 impl Solution {
     pub fn smallest_subarrays(nums: Vec<i32>) -> Vec<i32> {
-        let mut bit_index: [i32; 30] = [0; 30]; // The first index of the bit in the nums
+        let mut bit_index = [0; 30]; // The first index of the bit in the nums
         let mut result: Vec<i32> = vec![1; nums.len()];
 
         for (index, &num) in nums.iter().enumerate().rev().skip_while(|(_, v)| **v == 0) {
