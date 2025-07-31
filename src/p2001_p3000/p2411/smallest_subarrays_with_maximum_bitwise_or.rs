@@ -6,19 +6,19 @@ pub struct Solution;
 
 impl Solution {
     pub fn smallest_subarrays(nums: Vec<i32>) -> Vec<i32> {
-        let mut bit_index = [0; 30]; // The first index of the bit in the nums
+        let mut bit_idx = [0; 30]; // The first idx of the bit in the nums
         let mut result: Vec<i32> = vec![1; nums.len()];
 
-        for (index, &num) in nums.iter().enumerate().rev().skip_while(|(_, v)| **v == 0) {
-            for (b, v) in bit_index.iter_mut().enumerate() {
+        for (idx, &num) in nums.iter().enumerate().rev().skip_while(|(_, v)| **v == 0) {
+            for (b, v) in bit_idx.iter_mut().enumerate() {
                 let bit = (num >> b) & 1;
 
-                *v = (1 - bit) * *v + bit * (index as i32);
+                *v = (1 - bit) * *v + bit * (idx as i32);
             }
 
-            let max_position = *bit_index.iter().max().unwrap();
+            let max_pos = *bit_idx.iter().max().unwrap();
 
-            result[index] = max_position - index as i32 + 1;
+            result[idx] = max_pos - idx as i32 + 1;
         }
 
         result

@@ -8,17 +8,17 @@ pub struct Solution;
 
 impl Solution {
     pub fn max_difference(s: String) -> i32 {
-        let mut frequency = vec![0; 26];
+        let mut freq = vec![0; 26];
         let a = b'a';
 
         for &b in s.as_bytes() {
-            frequency[(b - a) as usize] += 1;
+            freq[(b - a) as usize] += 1;
         }
 
         let mut odd = 0;
         let mut even = i32::MAX;
 
-        for &n in &frequency {
+        for &n in &freq {
             if n % 2 == 1 {
                 odd = max(odd, n);
             } else if n != 0 {

@@ -31,16 +31,14 @@ impl Solution {
             }
 
             let len_str = std::str::from_utf8(&bytes[i..j]).unwrap();
-            let length = len_str.parse::<usize>().unwrap();
+            let len = len_str.parse::<usize>().unwrap();
 
             j += 1; // skip delimiter
 
-            let str_val = std::str::from_utf8(&bytes[j..j + length])
-                .unwrap()
-                .to_string();
+            let str_val = std::str::from_utf8(&bytes[j..j + len]).unwrap().to_string();
 
             result.push(str_val);
-            i = j + length;
+            i = j + len;
         }
 
         result

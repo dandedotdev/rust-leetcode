@@ -10,7 +10,7 @@ impl Solution {
             .iter()
             .enumerate()
             .filter(|(_, word)| word.contains(x))
-            .map(|(index, _)| index as i32)
+            .map(|(idx, _)| idx as i32)
             .collect()
     }
 }

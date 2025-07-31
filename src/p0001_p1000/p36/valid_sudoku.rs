@@ -14,15 +14,15 @@ impl Solution {
             for (c, &char) in row_vec.iter().enumerate() {
                 if let Some(d) = char.to_digit(10) {
                     let bit = 1 << d;
-                    let box_index = (r / 3) * 3 + (c / 3);
+                    let box_idx = (r / 3) * 3 + (c / 3);
 
-                    if (row[r] & bit) != 0 || (col[c] & bit) != 0 || (boxes[box_index] & bit) != 0 {
+                    if (row[r] & bit) != 0 || (col[c] & bit) != 0 || (boxes[box_idx] & bit) != 0 {
                         return false;
                     }
 
                     row[r] |= bit;
                     col[c] |= bit;
-                    boxes[box_index] |= bit;
+                    boxes[box_idx] |= bit;
                 }
             }
         }

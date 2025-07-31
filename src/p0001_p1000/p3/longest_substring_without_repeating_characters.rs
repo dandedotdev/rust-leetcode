@@ -6,17 +6,17 @@ pub struct Solution;
 
 impl Solution {
     pub fn length_of_longest_substring(s: String) -> i32 {
-        let mut last_char_index = [0; 128]; // ASCII table
+        let mut last_char_idx = [0; 128]; // ASCII table
         let mut start = 0;
-        let mut max_length = 0;
+        let mut max_len = 0;
 
         for (end, char) in s.chars().enumerate() {
-            start = start.max(last_char_index[char as usize]);
-            max_length = max_length.max(end - start + 1);
-            last_char_index[char as usize] = end + 1;
+            start = start.max(last_char_idx[char as usize]);
+            max_len = max_len.max(end - start + 1);
+            last_char_idx[char as usize] = end + 1;
         }
 
-        max_length as i32
+        max_len as i32
     }
 }
 

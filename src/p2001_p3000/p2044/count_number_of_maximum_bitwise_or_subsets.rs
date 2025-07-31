@@ -13,25 +13,25 @@ impl Solution {
 
     pub fn backtrack(
         nums: &[i32],
-        index: usize,
+        idx: usize,
         max_bitwise_or: i32,
         current_bitwise_or: i32,
     ) -> i32 {
         if current_bitwise_or == max_bitwise_or {
             // the number of subsets that can be formed with the remaining elements
-            return 1 << (nums.len() - index);
+            return 1 << (nums.len() - idx);
         }
 
-        if index == nums.len() {
+        if idx == nums.len() {
             return 0;
         }
 
         Self::backtrack(
             nums,
-            index + 1,
+            idx + 1,
             max_bitwise_or,
-            current_bitwise_or | nums[index],
-        ) + Self::backtrack(nums, index + 1, max_bitwise_or, current_bitwise_or)
+            current_bitwise_or | nums[idx],
+        ) + Self::backtrack(nums, idx + 1, max_bitwise_or, current_bitwise_or)
     }
 }
 
