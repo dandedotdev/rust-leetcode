@@ -81,6 +81,7 @@ mod tests {
     #[test]
     fn test_case_1() {
         let mut matrix = vec![vec![1, 1, 1], vec![1, 0, 1], vec![1, 1, 1]];
+
         Solution::set_zeroes(&mut matrix);
 
         assert_eq!(matrix, vec![vec![1, 0, 1], vec![0, 0, 0], vec![1, 0, 1]]);
@@ -89,6 +90,7 @@ mod tests {
     #[test]
     fn test_case_2() {
         let mut matrix = vec![vec![0, 1, 2, 0], vec![3, 4, 5, 2], vec![1, 3, 1, 5]];
+
         Solution::set_zeroes(&mut matrix);
 
         assert_eq!(

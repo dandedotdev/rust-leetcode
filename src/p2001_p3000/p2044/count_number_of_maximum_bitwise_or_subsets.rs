@@ -43,23 +43,26 @@ mod tests {
     fn test_case_1() {
         let nums = vec![3, 1];
         let result = Solution::count_max_or_subsets(nums);
+        let expected = 2;
 
-        assert_eq!(result, 2);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let nums = vec![2, 2, 2];
         let result = Solution::count_max_or_subsets(nums);
+        let expected = 7;
 
-        assert_eq!(result, 7);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_3() {
         let nums = vec![3, 2, 1, 5];
         let result = Solution::count_max_or_subsets(nums);
+        let expected = 6;
 
-        assert_eq!(result, 6);
+        assert_eq!(result, expected);
     }
 }

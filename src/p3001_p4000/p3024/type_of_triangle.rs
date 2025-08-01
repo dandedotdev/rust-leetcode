@@ -24,15 +24,17 @@ mod tests {
     fn test_case_1() {
         let nums = vec![3, 3, 3];
         let result = Solution::triangle_type(nums);
+        let expected = "equilateral";
 
-        assert_eq!(result, "equilateral");
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let nums = vec![3, 4, 5];
         let result = Solution::triangle_type(nums);
+        let expected = "scalene";
 
-        assert_eq!(result, "scalene");
+        assert_eq!(result, expected);
     }
 }

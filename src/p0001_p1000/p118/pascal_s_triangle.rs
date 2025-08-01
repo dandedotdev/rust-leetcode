@@ -29,6 +29,7 @@ mod tests {
     #[test]
     fn test_case_1() {
         let num_rows = 5;
+        let result = Solution::generate(num_rows);
         let expected = vec![
             vec![1],
             vec![1, 1],
@@ -37,14 +38,15 @@ mod tests {
             vec![1, 4, 6, 4, 1],
         ];
 
-        assert_eq!(Solution::generate(num_rows), expected);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let num_rows = 1;
+        let result = Solution::generate(num_rows);
         let expected = vec![vec![1]];
 
-        assert_eq!(Solution::generate(num_rows), expected);
+        assert_eq!(result, expected);
     }
 }

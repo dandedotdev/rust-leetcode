@@ -34,8 +34,9 @@ mod tests {
         let s = "ABAB";
         let k = 2;
         let result = Solution::character_replacement(s.to_string(), k);
+        let expected = 4;
 
-        assert_eq!(result, 4);
+        assert_eq!(result, expected);
     }
 
     #[test]
@@ -43,7 +44,8 @@ mod tests {
         let s = "AABABBA";
         let k = 1;
         let result = Solution::character_replacement(s.to_string(), k);
+        let expected = 4;
 
-        assert_eq!(result, 4);
+        assert_eq!(result, expected);
     }
 }

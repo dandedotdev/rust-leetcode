@@ -27,8 +27,8 @@ mod tests {
     #[test]
     fn test_case_1() {
         let s = "abcabcbb".to_string();
-        let expected = 3;
         let result = Solution::length_of_longest_substring(s);
+        let expected = 3;
 
         assert_eq!(result, expected);
     }
@@ -36,8 +36,8 @@ mod tests {
     #[test]
     fn test_case_2() {
         let s = "bbbbb".to_string();
-        let expected = 1;
         let result = Solution::length_of_longest_substring(s);
+        let expected = 1;
 
         assert_eq!(result, expected);
     }
@@ -45,8 +45,8 @@ mod tests {
     #[test]
     fn test_case_3() {
         let s = "pwwkew".to_string();
-        let expected = 3;
         let result = Solution::length_of_longest_substring(s);
+        let expected = 3;
 
         assert_eq!(result, expected);
     }

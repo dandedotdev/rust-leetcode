@@ -27,23 +27,26 @@ mod tests {
     fn test_case_1() {
         let nums = vec![1, 2, 3, 4, 5];
         let result = Solution::max_sum(nums);
+        let expected = 15;
 
-        assert_eq!(result, 15);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let nums = vec![1, 1, 0, 1, 1];
         let result = Solution::max_sum(nums);
+        let expected = 1;
 
-        assert_eq!(result, 1);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_3() {
         let nums = vec![1, 2, -1, -2, 1, 0, -1];
         let result = Solution::max_sum(nums);
+        let expected = 3;
 
-        assert_eq!(result, 3);
+        assert_eq!(result, expected);
     }
 }

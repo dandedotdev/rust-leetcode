@@ -39,16 +39,25 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        assert!(Solution::is_valid("234Adas".to_string()));
+        let word = "234Adas".to_string();
+        let result = Solution::is_valid(word);
+
+        assert!(result);
     }
 
     #[test]
     fn test_case_2() {
-        assert!(!Solution::is_valid("b3".to_string()));
+        let word = "b3".to_string();
+        let result = Solution::is_valid(word);
+
+        assert!(!result);
     }
 
     #[test]
     fn test_case_3() {
-        assert!(!Solution::is_valid("a3$e".to_string()));
+        let word = "a3$e".to_string();
+        let result = Solution::is_valid(word);
+
+        assert!(!result);
     }
 }

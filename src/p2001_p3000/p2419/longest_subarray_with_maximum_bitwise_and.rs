@@ -41,16 +41,18 @@ mod tests {
     fn test_case_1() {
         let nums = vec![1, 2, 3, 3, 2, 2];
         let result = Solution::longest_subarray(nums);
+        let expected = 2;
 
-        assert_eq!(result, 2);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let nums = vec![1, 2, 3, 4];
         let result = Solution::longest_subarray(nums);
+        let expected = 1;
 
-        assert_eq!(result, 1);
+        assert_eq!(result, expected);
     }
 
     #[test]
@@ -59,7 +61,8 @@ mod tests {
             96317, 96317, 96317, 96317, 96317, 96317, 96317, 96317, 96317, 279979,
         ];
         let result = Solution::longest_subarray(nums);
+        let expected = 1;
 
-        assert_eq!(result, 1);
+        assert_eq!(result, expected);
     }
 }

@@ -38,19 +38,28 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        assert_eq!(Solution::longest_consecutive(vec![100, 4, 200, 1, 3, 2]), 4);
+        let nums = vec![100, 4, 200, 1, 3, 2];
+        let result = Solution::longest_consecutive(nums);
+        let expected = 4;
+
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
-        assert_eq!(
-            Solution::longest_consecutive(vec![0, 3, 7, 2, 5, 8, 4, 6, 0, 1]),
-            9
-        );
+        let nums = vec![0, 3, 7, 2, 5, 8, 4, 6, 0, 1];
+        let result = Solution::longest_consecutive(nums);
+        let expected = 9;
+
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_3() {
-        assert_eq!(Solution::longest_consecutive(vec![1, 0, 1, 2]), 3);
+        let nums = vec![1, 0, 1, 2];
+        let result = Solution::longest_consecutive(nums);
+        let expected = 3;
+
+        assert_eq!(result, expected);
     }
 }

@@ -38,10 +38,10 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        let s = ["eat", "tea", "tan", "ate", "nat", "bat"]
             .map(String::from)
             .to_vec();
-        let result = Solution::group_anagrams(strs);
+        let result = Solution::group_anagrams(s);
         let expected = vec![
             ["eat", "tea", "ate"].map(String::from).to_vec(),
             ["tan", "nat"].map(String::from).to_vec(),
@@ -53,8 +53,8 @@ mod tests {
 
     #[test]
     fn test_case_2() {
-        let strs = [""].map(String::from).to_vec();
-        let result = Solution::group_anagrams(strs);
+        let s = [""].map(String::from).to_vec();
+        let result = Solution::group_anagrams(s);
         let expected = vec![[""].map(String::from).to_vec()];
 
         assert_eq!(normalize_result(result), normalize_result(expected));
@@ -62,8 +62,8 @@ mod tests {
 
     #[test]
     fn test_case_3() {
-        let strs = ["a"].map(String::from).to_vec();
-        let result = Solution::group_anagrams(strs);
+        let s = ["a"].map(String::from).to_vec();
+        let result = Solution::group_anagrams(s);
         let expected = vec![["a"].map(String::from).to_vec()];
 
         assert_eq!(normalize_result(result), normalize_result(expected));

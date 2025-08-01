@@ -33,15 +33,17 @@ mod tests {
     fn test_case_1() {
         let nums = vec![1, 0, 2, 1, 3];
         let result = Solution::smallest_subarrays(nums);
+        let expected = vec![3, 3, 2, 2, 1];
 
-        assert_eq!(result, vec![3, 3, 2, 2, 1]);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let nums = vec![1, 2];
         let result = Solution::smallest_subarrays(nums);
+        let expected = vec![2, 1];
 
-        assert_eq!(result, vec![2, 1]);
+        assert_eq!(result, expected);
     }
 }

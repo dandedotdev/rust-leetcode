@@ -37,15 +37,19 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let test_case = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
+        let height = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
+        let result = Solution::max_area(height);
+        let expected = 49;
 
-        assert_eq!(Solution::max_area(test_case), 49);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
-        let test_case = vec![1, 1];
+        let height = vec![1, 1];
+        let result = Solution::max_area(height);
+        let expected = 1;
 
-        assert_eq!(Solution::max_area(test_case), 1);
+        assert_eq!(result, expected);
     }
 }

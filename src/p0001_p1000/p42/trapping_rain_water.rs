@@ -41,15 +41,17 @@ mod tests {
     fn test_case_1() {
         let height = vec![0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
         let result = Solution::trap(height);
+        let expected = 6;
 
-        assert_eq!(result, 6);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let height = vec![4, 2, 0, 3, 2, 5];
         let result = Solution::trap(height);
+        let expected = 9;
 
-        assert_eq!(result, 9);
+        assert_eq!(result, expected);
     }
 }

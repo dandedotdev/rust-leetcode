@@ -24,8 +24,9 @@ mod tests {
         let words = ["leet", "code"].iter().map(|s| s.to_string()).collect();
         let x = 'e';
         let result = Solution::find_words_containing(words, x);
+        let expected = vec![0, 1];
 
-        assert_eq!(result, vec![0, 1]);
+        assert_eq!(result, expected);
     }
 
     #[test]
@@ -36,8 +37,9 @@ mod tests {
             .collect();
         let x = 'a';
         let result = Solution::find_words_containing(words, x);
+        let expected = vec![0, 2];
 
-        assert_eq!(result, vec![0, 2]);
+        assert_eq!(result, expected);
     }
 
     #[test]
@@ -48,7 +50,8 @@ mod tests {
             .collect();
         let x = 'z';
         let result = Solution::find_words_containing(words, x);
+        let expected = vec![];
 
-        assert_eq!(result, vec![]);
+        assert_eq!(result, expected);
     }
 }

@@ -32,14 +32,21 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        assert_eq!(
-            Solution::top_k_frequent(vec![1, 1, 1, 2, 2, 3], 2),
-            vec![1, 2]
-        );
+        let nums = vec![1, 1, 1, 2, 2, 3];
+        let k = 2;
+        let result = Solution::top_k_frequent(nums, k);
+        let expected = vec![1, 2];
+
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
-        assert_eq!(Solution::top_k_frequent(vec![1], 1), vec![1]);
+        let nums = vec![1];
+        let k = 1;
+        let result = Solution::top_k_frequent(nums, k);
+        let expected = vec![1];
+
+        assert_eq!(result, expected);
     }
 }

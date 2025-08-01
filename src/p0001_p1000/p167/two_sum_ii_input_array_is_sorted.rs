@@ -28,8 +28,6 @@ impl Solution {
 
 #[cfg(test)]
 mod tests {
-    use core::task;
-
     use super::*;
 
     #[test]
@@ -37,8 +35,9 @@ mod tests {
         let numbers = vec![2, 7, 11, 15];
         let target = 9;
         let result = Solution::two_sum(numbers, target);
+        let expected = vec![1, 2];
 
-        assert_eq!(result, vec![1, 2]);
+        assert_eq!(result, expected);
     }
 
     #[test]
@@ -46,8 +45,9 @@ mod tests {
         let numbers = vec![2, 3, 4];
         let target = 6;
         let result = Solution::two_sum(numbers, target);
+        let expected = vec![1, 3];
 
-        assert_eq!(result, vec![1, 3]);
+        assert_eq!(result, expected);
     }
 
     #[test]
@@ -55,7 +55,8 @@ mod tests {
         let numbers = vec![-1, 0];
         let target = -1;
         let result = Solution::two_sum(numbers, target);
+        let expected = vec![1, 2];
 
-        assert_eq!(result, vec![1, 2]);
+        assert_eq!(result, expected);
     }
 }

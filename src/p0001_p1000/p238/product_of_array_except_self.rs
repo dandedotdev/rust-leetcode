@@ -36,15 +36,19 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        assert_eq!(Solution::product_except_self(vec![1, 2, 3, 4]), vec![
-            24, 12, 8, 6
-        ]);
+        let nums = vec![1, 2, 3, 4];
+        let result = Solution::product_except_self(nums);
+        let expected = vec![24, 12, 8, 6];
+
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
-        assert_eq!(Solution::product_except_self(vec![-1, 1, 0, -3, 3]), vec![
-            0, 0, 9, 0, 0
-        ]);
+        let nums = vec![-1, 1, 0, -3, 3];
+        let result = Solution::product_except_self(nums);
+        let expected = vec![0, 0, 9, 0, 0];
+
+        assert_eq!(result, expected);
     }
 }

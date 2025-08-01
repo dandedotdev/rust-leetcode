@@ -33,24 +33,27 @@ mod tests {
     fn test_case_1() {
         let arr = vec![0];
         let result = Solution::subarray_bitwise_ors(arr);
+        let expected = 1;
 
-        assert_eq!(result, 1);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let arr = vec![1, 1, 2];
         let result = Solution::subarray_bitwise_ors(arr);
+        let expected = 3;
 
-        assert_eq!(result, 3);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_3() {
         let arr = vec![1, 2, 4];
         let result = Solution::subarray_bitwise_ors(arr);
+        let expected = 6;
 
-        assert_eq!(result, 6);
+        assert_eq!(result, expected);
     }
 
     #[test]
@@ -60,7 +63,8 @@ mod tests {
             950, 518, 448,
         ];
         let result = Solution::subarray_bitwise_ors(arr);
+        let expected = 38;
 
-        assert_eq!(result, 38);
+        assert_eq!(result, expected);
     }
 }

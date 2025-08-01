@@ -20,15 +20,17 @@ mod tests {
     fn test_case_1() {
         let nums = vec![1, 2, 4];
         let result = Solution::max_adjacent_distance(nums);
+        let expected = 3;
 
-        assert_eq!(result, 3);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let nums = vec![-5, -10, -5];
         let result = Solution::max_adjacent_distance(nums);
+        let expected = 5;
 
-        assert_eq!(result, 5);
+        assert_eq!(result, expected);
     }
 }

@@ -32,14 +32,18 @@ mod tests {
                 next: Some(Box::new(ListNode::new(1))),
             })),
         }));
+        let result = Solution::get_decimal_value(head);
+        let expected = 5;
 
-        assert_eq!(Solution::get_decimal_value(head), 5);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
         let head = Some(Box::new(ListNode::new(0)));
+        let result = Solution::get_decimal_value(head);
+        let expected = 0;
 
-        assert_eq!(Solution::get_decimal_value(head), 0);
+        assert_eq!(result, expected);
     }
 }

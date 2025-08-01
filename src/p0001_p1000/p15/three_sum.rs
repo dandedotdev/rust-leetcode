@@ -48,25 +48,28 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let test_case = vec![-1, 0, 1, 2, -1, -4];
+        let nums = vec![-1, 0, 1, 2, -1, -4];
+        let result = Solution::three_sum(nums);
         let expected = vec![vec![-1, -1, 2], vec![-1, 0, 1]];
 
-        assert_eq!(Solution::three_sum(test_case), expected);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
-        let test_case = vec![0, 1, 1];
+        let nums = vec![0, 1, 1];
+        let result = Solution::three_sum(nums);
         let expected: Vec<Vec<i32>> = vec![];
 
-        assert_eq!(Solution::three_sum(test_case), expected);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_3() {
-        let test_case = vec![0, 0, 0];
+        let nums = vec![0, 0, 0];
+        let result = Solution::three_sum(nums);
         let expected = vec![vec![0, 0, 0]];
 
-        assert_eq!(Solution::three_sum(test_case), expected);
+        assert_eq!(result, expected);
     }
 }

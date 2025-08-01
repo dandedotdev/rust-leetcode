@@ -51,25 +51,25 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let test_case: Vec<String> = vec!["neet", "code", "love", "you"]
+        let strs: Vec<String> = vec!["neet", "code", "love", "you"]
             .into_iter()
             .map(String::from)
             .collect();
-        let encoded = Solution::encode(test_case.clone());
+        let encoded = Solution::encode(strs.clone());
         let decoded = Solution::decode(encoded);
 
-        assert_eq!(test_case, decoded);
+        assert_eq!(strs, decoded);
     }
 
     #[test]
     fn test_case_2() {
-        let test_case: Vec<String> = vec!["we", "say", ":", "yes"]
+        let strs: Vec<String> = vec!["we", "say", ":", "yes"]
             .into_iter()
             .map(String::from)
             .collect();
-        let encoded = Solution::encode(test_case.clone());
+        let encoded = Solution::encode(strs.clone());
         let decoded = Solution::decode(encoded);
 
-        assert_eq!(test_case, decoded);
+        assert_eq!(strs, decoded);
     }
 }

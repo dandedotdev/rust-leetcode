@@ -25,15 +25,19 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let test_case = vec![7, 1, 5, 3, 6, 4];
+        let prices = vec![7, 1, 5, 3, 6, 4];
+        let result = Solution::max_profit(prices);
+        let expected = 5;
 
-        assert_eq!(Solution::max_profit(test_case), 5);
+        assert_eq!(result, expected);
     }
 
     #[test]
     fn test_case_2() {
-        let test_case = vec![7, 6, 4, 3, 1];
+        let prices = vec![7, 6, 4, 3, 1];
+        let result = Solution::max_profit(prices);
+        let expected = 0;
 
-        assert_eq!(Solution::max_profit(test_case), 0);
+        assert_eq!(result, expected);
     }
 }
