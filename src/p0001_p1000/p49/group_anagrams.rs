@@ -8,25 +8,25 @@ pub struct Solution;
 
 impl Solution {
     fn count_chars(s: &str) -> [i32; 26] {
-        let mut counts = [0; 26];
+        let mut freq: [i32; 26] = [0; 26];
 
-        for c in s.chars() {
-            counts[c as usize - 'a' as usize] += 1;
+        for &byte in s.as_bytes() {
+            freq[(byte - b'a') as usize] += 1;
         }
 
-        counts
+        freq
     }
 
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
-        let mut map = HashMap::new();
+        let mut memo = HashMap::new();
 
         for s in strs.iter() {
             let key = Self::count_chars(s);
 
-            map.entry(key).or_insert(Vec::new()).push(s.clone());
+            memo.entry(key).or_insert(Vec::new()).push(s.clone());
         }
 
-        map.into_values().collect()
+        memo.into_values().collect()
     }
 }
 

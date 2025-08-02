@@ -12,17 +12,17 @@ impl Solution {
             return false;
         }
 
-        let mut counts = HashMap::new();
+        let mut memo: HashMap<u8, i32> = HashMap::new();
 
-        for c in s.chars() {
-            *counts.entry(c).or_insert(0) += 1;
+        for &byte in s.as_bytes() {
+            *memo.entry(byte).or_default() += 1;
         }
 
-        for c in t.chars() {
-            counts.entry(c).and_modify(|count| *count -= 1);
+        for &byte in t.as_bytes() {
+            memo.entry(byte).and_modify(|count| *count -= 1);
         }
 
-        counts.into_values().all(|v| v == 0)
+        memo.into_values().all(|v| v == 0)
     }
 }
 

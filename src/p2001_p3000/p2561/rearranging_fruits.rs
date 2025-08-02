@@ -8,22 +8,22 @@ pub struct Solution;
 
 impl Solution {
     pub fn min_cost(basket1: Vec<i32>, basket2: Vec<i32>) -> i64 {
-        let mut diff_map: HashMap<i32, i32> = HashMap::new();
+        let mut memo: HashMap<i32, i32> = HashMap::new();
         let mut min_cost = i32::MAX;
 
         for &fruit in basket1.iter() {
-            *diff_map.entry(fruit).or_insert(0) += 1;
+            *memo.entry(fruit).or_default() += 1;
             min_cost = min_cost.min(fruit);
         }
 
         for &fruit in basket2.iter() {
-            *diff_map.entry(fruit).or_insert(0) -= 1;
+            *memo.entry(fruit).or_default() -= 1;
             min_cost = min_cost.min(fruit);
         }
 
         let mut to_swap = Vec::new();
 
-        for (&fruit, &diff) in diff_map.iter() {
+        for (&fruit, &diff) in memo.iter() {
             if diff % 2 != 0 {
                 return -1;
             }

@@ -15,10 +15,10 @@ impl Solution {
             return false;
         }
 
-        let mut dict = HashMap::new();
+        let mut memo: HashMap<u8, i32> = HashMap::new();
 
         for &byte in s1.as_bytes() {
-            *dict.entry(byte).or_insert(0) += 1;
+            *memo.entry(byte).or_default() += 1;
         }
 
         let mut window = HashMap::new();
@@ -28,25 +28,25 @@ impl Solution {
         while end < m {
             let end_char = s2.as_bytes()[end];
 
-            if dict.contains_key(&end_char) {
-                *window.entry(end_char).or_insert(0) += 1;
+            if memo.contains_key(&end_char) {
+                *window.entry(end_char).or_default() += 1;
 
-                if window.get(&end_char) == dict.get(&end_char) {
+                if window.get(&end_char) == memo.get(&end_char) {
                     valid_count += 1;
                 }
             }
 
             end += 1;
 
-            while valid_count == dict.len() {
+            while valid_count == memo.len() {
                 if end - start == n {
                     return true;
                 }
 
                 let start_char = s2.as_bytes()[start];
 
-                if dict.contains_key(&start_char) {
-                    if window.get(&start_char) == dict.get(&start_char) {
+                if memo.contains_key(&start_char) {
+                    if window.get(&start_char) == memo.get(&start_char) {
                         valid_count -= 1;
                     }
 

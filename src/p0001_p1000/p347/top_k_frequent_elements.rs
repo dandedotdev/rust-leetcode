@@ -8,13 +8,13 @@ pub struct Solution;
 
 impl Solution {
     pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
-        let mut map = HashMap::new();
+        let mut memo: HashMap<i32, i32> = HashMap::new();
 
         for num in nums {
-            *map.entry(num).or_insert(0) += 1;
+            *memo.entry(num).or_default() += 1;
         }
 
-        let mut pairs: Vec<_> = map.into_iter().collect();
+        let mut pairs: Vec<_> = memo.into_iter().collect();
 
         pairs.sort_by(|a, b| b.1.cmp(&a.1));
 
