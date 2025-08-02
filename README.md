@@ -44,6 +44,7 @@ Solving Leetcode problems with Rust.
 - [2044. Count Number of Maximum Bitwise-OR Subsets `Medium`](./src/p2001_p3000/p2044/count_number_of_maximum_bitwise_or_subsets.rs)
 - [2411. Smallest Subarrays with Maximum Bitwise-OR `Medium`](./src/p2001_p3000/p2411/smallest_subarrays_with_maximum_bitwise_or.rs)
 - [2419. Longest Subarray With Maximum Bitwise AND `Medium`](./src/p2001_p3000/p2419/longest_subarray_with_maximum_bitwise_and.rs)
+- [2561. Rearranging Fruits `Hard`](./src/p2001_p3000/p2561/rearranging_fruits.rs)
 - [2942. Find Words Containing Character `Easy`](./src/p2001_p3000/p2942/find_words_containing_characters.rs)
 - [3024. Type of Triangle `Easy`](./src/p3001_p4000/p3024/type_of_triangle.rs)
 - [3136. Valid Word `Easy`](./src/p3001_p4000/p3136/valid_word.rs)
