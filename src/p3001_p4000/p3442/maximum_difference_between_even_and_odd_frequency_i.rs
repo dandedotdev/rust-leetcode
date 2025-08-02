@@ -9,10 +9,9 @@ pub struct Solution;
 impl Solution {
     pub fn max_difference(s: String) -> i32 {
         let mut freq = vec![0; 26];
-        let a = b'a';
 
-        for &b in s.as_bytes() {
-            freq[(b - a) as usize] += 1;
+        for &byte in s.as_bytes() {
+            freq[(byte - b'a') as usize] += 1;
         }
 
         let mut odd = 0;
