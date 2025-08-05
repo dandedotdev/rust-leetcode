@@ -8,7 +8,7 @@ pub struct Solution;
 
 impl Solution {
     pub fn encode(strs: Vec<String>) -> String {
-        let mut result = String::new();
+        let mut result = String::default();
 
         for s in strs {
             result.push_str(&format!("{}{}{}", s.len(), DELIMITER, s));
