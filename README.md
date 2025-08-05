@@ -27,6 +27,7 @@ Solving Leetcode problems with Rust.
 - [42. Trapping Rain Water `Hard`](./src/p0001_p1000/p42/trapping_rain_water.rs)
 - [49. Group Anagrams `Medium`](./src/p0001_p1000/p49/group_anagrams.rs)
 - [73. Set Matrix Zeroes `Medium`](./src/p0001_p1000/p73/set_matrix_zeroes.rs)
+- [76. Minimum Window Substring `Hard`](./src/p0001_p1000/p76/minimum_window_substring.rs)
 - [118. Pascal's Triangle `Easy`](./src/p0001_p1000/p118/pascal_s_triangle.rs)
 - [121. Best Time to Buy and Sell Stock `Easy`](./src/p0001_p1000/p121/best_time_to_buy_and_sell_stock.rs)
 - [125. Valid Palindrome `Easy`](./src/p0001_p1000/p125/mod.rs)

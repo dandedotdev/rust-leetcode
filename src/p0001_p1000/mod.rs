@@ -9,6 +9,7 @@ mod p36;
 mod p42;
 mod p49;
 mod p73;
+mod p76;
 
 mod p118;
 mod p121;
