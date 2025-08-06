@@ -1,4 +1,4 @@
-// <Array, Binary Search, Segment Tree, Simulation, Ordered Set>
+// <Array, Simulation>
 // Time: O(n ** 2)
 // Space: O(1)
 

@@ -3,4 +3,5 @@ mod p3136;
 mod p3423;
 mod p3442;
 mod p3477;
+mod p3479;
 mod p3487;
