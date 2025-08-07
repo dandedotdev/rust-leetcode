@@ -5,11 +5,14 @@ dictionaryDefinitions: []
 dictionaries: []
 words:
   [
-    "huahua's",
-    "leetcode",
-    "neet",
+    # ===== Dev ===== #
+    "deque",
     "nums",
     "strs",
     "subarray",
-    "subarrays"
+    "subarrays",
+    # ===== Resource ===== #
+    "huahua's",
+    "leetcode",
+    "neet",
   ]
