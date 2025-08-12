@@ -32,20 +32,19 @@ impl Solution {
 
 #[cfg(test)]
 mod tests {
-    use crate::utils::test_helper::normalize_result;
+    use crate::utils::test_helper::{map_test_case_to_string, normalize_result};
 
     use super::*;
 
     #[test]
     fn test_case_1() {
-        let s = ["eat", "tea", "tan", "ate", "nat", "bat"]
-            .map(String::from)
-            .to_vec();
+        let s = vec!["eat", "tea", "tan", "ate", "nat", "bat"];
+        let s = map_test_case_to_string(s);
         let result = Solution::group_anagrams(s);
         let expected = vec![
-            ["eat", "tea", "ate"].map(String::from).to_vec(),
-            ["tan", "nat"].map(String::from).to_vec(),
-            ["bat"].map(String::from).to_vec(),
+            map_test_case_to_string(vec!["eat", "tea", "ate"]),
+            map_test_case_to_string(vec!["tan", "nat"]),
+            map_test_case_to_string(vec!["bat"]),
         ];
 
         assert_eq!(normalize_result(result), normalize_result(expected));
@@ -53,18 +52,20 @@ mod tests {
 
     #[test]
     fn test_case_2() {
-        let s = [""].map(String::from).to_vec();
+        let s = vec![""];
+        let s = map_test_case_to_string(s);
         let result = Solution::group_anagrams(s);
-        let expected = vec![[""].map(String::from).to_vec()];
+        let expected = vec![map_test_case_to_string(vec![""])];
 
         assert_eq!(normalize_result(result), normalize_result(expected));
     }
 
     #[test]
     fn test_case_3() {
-        let s = ["a"].map(String::from).to_vec();
+        let s = vec!["a"];
+        let s = map_test_case_to_string(s);
         let result = Solution::group_anagrams(s);
-        let expected = vec![["a"].map(String::from).to_vec()];
+        let expected = vec![map_test_case_to_string(vec!["a"])];
 
         assert_eq!(normalize_result(result), normalize_result(expected));
     }

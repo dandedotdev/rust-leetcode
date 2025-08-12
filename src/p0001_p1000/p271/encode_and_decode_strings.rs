@@ -47,14 +47,14 @@ impl Solution {
 
 #[cfg(test)]
 mod tests {
+    use crate::utils::test_helper::map_test_case_to_string;
+
     use super::*;
 
     #[test]
     fn test_case_1() {
-        let strs: Vec<String> = vec!["neet", "code", "love", "you"]
-            .into_iter()
-            .map(String::from)
-            .collect();
+        let strs = vec!["neet", "code", "love", "you"];
+        let strs = map_test_case_to_string(strs);
         let encoded = Solution::encode(strs.clone());
         let decoded = Solution::decode(encoded);
 
@@ -63,10 +63,8 @@ mod tests {
 
     #[test]
     fn test_case_2() {
-        let strs: Vec<String> = vec!["we", "say", ":", "yes"]
-            .into_iter()
-            .map(String::from)
-            .collect();
+        let strs = vec!["we", "say", ":", "yes"];
+        let strs = map_test_case_to_string(strs);
         let encoded = Solution::encode(strs.clone());
         let decoded = Solution::decode(encoded);
 
