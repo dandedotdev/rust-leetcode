@@ -13,10 +13,10 @@ impl Solution {
         let mut result = vec![];
 
         for i in 0..nums.len() {
-            if let Some(&idx_front) = deque.front() {
-                if idx_front + k <= i {
-                    deque.pop_front();
-                }
+            if let Some(&idx_front) = deque.front()
+                && idx_front + k <= i
+            {
+                deque.pop_front();
             }
 
             while let Some(&idx_back) = deque.back() {
