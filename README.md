@@ -33,6 +33,7 @@ Solving Leetcode problems with Rust.
 - [121. Best Time to Buy and Sell Stock `Easy`](./src/p0001_p1000/p121/best_time_to_buy_and_sell_stock.rs)
 - [125. Valid Palindrome `Easy`](./src/p0001_p1000/p125/mod.rs)
 - [128. Longest Consecutive Sequence `Medium`](./src/p0001_p1000/p128/mod.rs)
+- [150. Evaluate Reverse Polish Notation `Medium`](./src/p0001_p1000/p150/evaluate_reverse_polish_notation.rs)
 - [155. Min Stack `Medium`](./src/p0001_p1000/p155/min_stack.rs)
 - [167. Two Sum II - Input Array is Sorted `Medium`](./src/p0001_p1000/p167/two_sum_ii_input_array_is_sorted.rs)
 - [217. Contains Duplicate `Easy`](./src/p0001_p1000/p217/contains_duplicate.rs)
