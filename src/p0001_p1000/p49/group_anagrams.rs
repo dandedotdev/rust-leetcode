@@ -32,7 +32,7 @@ impl Solution {
 
 #[cfg(test)]
 mod tests {
-    use crate::utils::normalize_result;
+    use crate::utils::test_helper::normalize_result;
 
     use super::*;
 
