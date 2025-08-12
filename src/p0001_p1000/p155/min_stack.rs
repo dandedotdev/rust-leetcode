@@ -1,4 +1,4 @@
-// <Design, Stack>
+// <Array, Design, Stack>
 // Time:
 //   - push: O(1)
 //   - pop: O(1)
