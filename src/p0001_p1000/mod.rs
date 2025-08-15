@@ -25,6 +25,7 @@ mod p238;
 mod p239;
 mod p242;
 mod p271;
+mod p342;
 mod p347;
 mod p424;
 mod p567;

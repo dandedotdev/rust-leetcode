@@ -42,6 +42,7 @@ Solving Leetcode problems with Rust.
 - [239. Sliding Window Maximum `Hard`](./src/p0001_p1000/p239/sliding_window_maximum.rs)
 - [242. Valid Anagram `Easy`](./src/p0001_p1000/p242/valid_anagram.rs)
 - [271. Encode and Decode Strings `Medium`](./src/p0001_p1000/p271/encode_and_decode_strings.rs)
+- [342. Power of Four `Easy`](./src/p0001_p1000/p342/power_of_four.rs)
 - [347. Top K Frequent Elements `Medium`](./src/p0001_p1000/p347/mod.rs)
 - [424. Longest Repeating Character Replacement `Medium`](./src/p0001_p1000/p424/longest_repeating_character_replacement.rs)
 - [567. Permutation in String `Medium`](./src/p0001_p1000/p567/mod.rs)
