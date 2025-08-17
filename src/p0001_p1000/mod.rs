@@ -30,6 +30,7 @@ mod p342;
 mod p347;
 mod p424;
 mod p567;
+mod p704;
 mod p739;
 mod p853;
 mod p898;

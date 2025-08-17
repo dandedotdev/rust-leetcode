@@ -47,6 +47,7 @@ Solving Leetcode problems with Rust.
 - [347. Top K Frequent Elements `Medium`](./src/p0001_p1000/p347/mod.rs)
 - [424. Longest Repeating Character Replacement `Medium`](./src/p0001_p1000/p424/longest_repeating_character_replacement.rs)
 - [567. Permutation in String `Medium`](./src/p0001_p1000/p567/mod.rs)
+- [704. Binary Search `Easy`](./src/p0001_p1000/p704/mod.rs)
 - [739. Daily Temperatures `Medium`](./src/p0001_p1000/p739/daily_temperatures.rs)
 - [853. Car Fleet `Medium`](./src/p0001_p1000/p853/car_fleet.rs)
 - [898. Bitwise ORs of Subarrays `Medium`](./src/p0001_p1000/p898/bitwise_ors_of_subarrays.rs)
