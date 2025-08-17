@@ -11,12 +11,7 @@ impl Solution {
         Self::backtrack(&nums, 0, possible_max, 0)
     }
 
-    pub fn backtrack(
-        nums: &[i32],
-        idx: usize,
-        max_bitwise_or: i32,
-        current_bitwise_or: i32,
-    ) -> i32 {
+    fn backtrack(nums: &[i32], idx: usize, max_bitwise_or: i32, current_bitwise_or: i32) -> i32 {
         if current_bitwise_or == max_bitwise_or {
             // the number of subsets that can be formed with the remaining elements
             return 1 << (nums.len() - idx);

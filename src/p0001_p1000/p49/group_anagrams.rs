@@ -7,16 +7,6 @@ use std::collections::HashMap;
 pub struct Solution;
 
 impl Solution {
-    fn count_chars(s: &str) -> [i32; 26] {
-        let mut freq: [i32; 26] = [0; 26];
-
-        for &byte in s.as_bytes() {
-            freq[(byte - b'a') as usize] += 1;
-        }
-
-        freq
-    }
-
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
         let mut memo = HashMap::new();
 
@@ -27,6 +17,16 @@ impl Solution {
         }
 
         memo.into_values().collect()
+    }
+
+    fn count_chars(s: &str) -> [i32; 26] {
+        let mut freq: [i32; 26] = [0; 26];
+
+        for &byte in s.as_bytes() {
+            freq[(byte - b'a') as usize] += 1;
+        }
+
+        freq
     }
 }
 
