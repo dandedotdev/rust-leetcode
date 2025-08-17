@@ -51,6 +51,7 @@ Solving Leetcode problems with Rust.
 - [704. Binary Search `Easy`](./src/p0001_p1000/p704/mod.rs)
 - [739. Daily Temperatures `Medium`](./src/p0001_p1000/p739/daily_temperatures.rs)
 - [853. Car Fleet `Medium`](./src/p0001_p1000/p853/car_fleet.rs)
+- [875. Koko Eating Bananas `Medium`](./src/p0001_p1000/p875/mod.rs)
 - [898. Bitwise ORs of Subarrays `Medium`](./src/p0001_p1000/p898/bitwise_ors_of_subarrays.rs)
 - [1290. Convert Binary Number in a Linked List to Integer `Easy`](./src/p1001_p2000/p1290/convert_binary_number_in_a_linked_list_to_integer.rs)
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)

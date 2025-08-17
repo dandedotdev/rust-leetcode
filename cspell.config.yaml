@@ -3,14 +3,15 @@ version: "0.2"
 ignorePaths: [".gitignore", "*.lock", "target"]
 dictionaryDefinitions: []
 dictionaries: []
-words:
-  [
+words: [
     # ===== Dev ===== #
     "deque",
     "nums",
     "strs",
     "subarray",
     "subarrays",
+    # ===== Leetcode ===== #
+    "koko",
     # ===== Resource ===== #
     "huahua's",
     "leetcode",
