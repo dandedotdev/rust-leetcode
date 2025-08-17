@@ -29,6 +29,7 @@ Solving Leetcode problems with Rust.
 - [42. Trapping Rain Water `Hard`](./src/p0001_p1000/p42/trapping_rain_water.rs)
 - [49. Group Anagrams `Medium`](./src/p0001_p1000/p49/group_anagrams.rs)
 - [73. Set Matrix Zeroes `Medium`](./src/p0001_p1000/p73/set_matrix_zeroes.rs)
+- [74. Search a 2D Matrix `Medium`](./src/p0001_p1000/p74/mod.rs)
 - [76. Minimum Window Substring `Hard`](./src/p0001_p1000/p76/minimum_window_substring.rs)
 - [84. Largest Rectangle in Histogram `Hard`](./src/p0001_p1000/p84/mod.rs)
 - [118. Pascal's Triangle `Easy`](./src/p0001_p1000/p118/pascal_s_triangle.rs)
