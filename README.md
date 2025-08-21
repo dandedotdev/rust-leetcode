@@ -19,6 +19,7 @@ Solving Leetcode problems with Rust.
 
 - [1. Two Sum `Easy`](./src/p0001_p1000/p1/two_sum.rs)
 - [3. Longest Substring Without Repeating Characters `Medium`](./src/p0001_p1000/p3/longest_substring_without_repeating_characters.rs)
+- [4. Median of Two Sorted Arrays `Hard`](./src/p0001_p1000/p4/mod.rs)
 - [7. Reverse Integer `Medium`](./src/p0001_p1000/p7/reverse_integer.rs)
 - [9. Palindrome Number `Easy`](./src/p0001_p1000/p9/palindrome_number.rs)
 - [11. Container With Most Water `Medium`](./src/p0001_p1000/p11/container_with_most_water.rs)
