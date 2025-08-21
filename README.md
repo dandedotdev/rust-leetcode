@@ -42,6 +42,7 @@ Solving Leetcode problems with Rust.
 - [153. Find Minimum in Rotated Sorted Array `Medium`](./src/p0001_p1000/p153/mod.rs)
 - [155. Min Stack `Medium`](./src/p0001_p1000/p155/min_stack.rs)
 - [167. Two Sum II - Input Array is Sorted `Medium`](./src/p0001_p1000/p167/two_sum_ii_input_array_is_sorted.rs)
+- [206. Reverse Linked List `Easy`](./src/p0001_p1000/p206/mod.rs)
 - [217. Contains Duplicate `Easy`](./src/p0001_p1000/p217/contains_duplicate.rs)
 - [238. Product of Array Except Self `Medium`](./src/p0001_p1000/p238/product_of_array_except_self.rs)
 - [239. Sliding Window Maximum `Hard`](./src/p0001_p1000/p239/sliding_window_maximum.rs)
