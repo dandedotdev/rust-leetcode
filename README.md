@@ -25,6 +25,7 @@ Solving Leetcode problems with Rust.
 - [11. Container With Most Water `Medium`](./src/p0001_p1000/p11/container_with_most_water.rs)
 - [15. 3Sum `Medium`](./src/p0001_p1000/p15/three_sum.rs)
 - [20. Valid Parentheses `Easy`](./src/p0001_p1000/p20/valid_parentheses.rs)
+- [21. Merge Two Sorted Lists `Easy`](./src/p0001_p1000/p21/mod.rs)
 - [22. Generate Parentheses `Medium`](./src/p0001_p1000/p22/generate_parentheses.rs)
 - [33. Search in Rotated Sorted Array `Medium`](./src/p0001_p1000/p33/search_in_rotated_sorted_array.rs)
 - [36. Valid Sudoku `Medium`](./src/p0001_p1000/p36/valid_sudoku.rs)
