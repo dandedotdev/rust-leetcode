@@ -1,0 +1,17 @@
+edition = "2024"
+
+combine_control_expr = false
+condense_wildcard_suffixes = true
+force_multiline_blocks = true
+format_macro_matchers = true
+group_imports = "StdExternalCrate"
+hex_literal_case = "Upper"
+imports_granularity = "Crate"
+imports_layout = "Mixed"
+match_arm_blocks = false
+match_block_trailing_comma = true
+reorder_impl_items = true
+reorder_imports = true
+use_field_init_shorthand = true
+unstable_features = true
+use_try_shorthand = true
