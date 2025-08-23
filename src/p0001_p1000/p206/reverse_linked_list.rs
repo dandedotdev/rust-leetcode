@@ -10,9 +10,9 @@ pub struct Solution;
 
 impl Solution {
     pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        let (mut prev, mut cur_node) = (None, head);
-        while let Some(mut node) = cur_node {
-            cur_node = node.next;
+        let (mut prev, mut cur) = (None, head);
+        while let Some(mut node) = cur {
+            cur = node.next;
             node.next = prev;
             prev = Some(node);
         }

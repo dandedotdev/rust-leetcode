@@ -13,14 +13,14 @@ impl Solution {
         mut list1: Option<Box<ListNode>>,
         mut list2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        let mut cur_node = &mut list1;
+        let mut cur = &mut list1;
 
         while list2.is_some() {
-            if cur_node.is_none() || list2.as_ref()?.val < cur_node.as_ref()?.val {
-                std::mem::swap(cur_node, &mut list2);
+            if cur.is_none() || list2.as_ref()?.val < cur.as_ref()?.val {
+                std::mem::swap(cur, &mut list2);
             }
 
-            cur_node = &mut cur_node.as_mut()?.next;
+            cur = &mut cur.as_mut()?.next;
         }
 
         list1
