@@ -22,6 +22,7 @@ mod p118;
 mod p121;
 mod p125;
 mod p128;
+mod p143;
 mod p150;
 mod p153;
 mod p155;
