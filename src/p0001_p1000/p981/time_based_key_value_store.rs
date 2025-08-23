@@ -24,9 +24,11 @@ impl TimeMap {
     fn get(&self, key: String, timestamp: i32) -> String {
         self.map
             .get(&key)
-            .and_then(|v| match v.partition_point(|&(t, _)| t <= timestamp) {
-                0 => None,
-                pp => Some(v[pp - 1].1.clone()),
+            .and_then(|v| {
+                match v.partition_point(|&(t, _)| t <= timestamp) {
+                    0 => None,
+                    pp => Some(v[pp - 1].1.clone()),
+                }
             })
             .unwrap_or_default()
     }
@@ -39,11 +41,11 @@ mod tests {
     #[test]
     fn test_case_1() {
         let mut time_map = TimeMap::new();
-        time_map.set(String::from("foo"), String::from("bar"), 1);
-        time_map.get(String::from("foo"), 1);
-        time_map.get(String::from("foo"), 3);
-        time_map.set(String::from("foo"), String::from("bar2"), 4);
-        time_map.get(String::from("foo"), 4);
-        time_map.get(String::from("foo"), 5);
+        time_map.set("foo".to_string(), "bar".to_string(), 1);
+        time_map.get("foo".to_string(), 1);
+        time_map.get("foo".to_string(), 3);
+        time_map.set("foo".to_string(), "bar2".to_string(), 4);
+        time_map.get("foo".to_string(), 4);
+        time_map.get("foo".to_string(), 5);
     }
 }

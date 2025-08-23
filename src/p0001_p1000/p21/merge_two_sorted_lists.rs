@@ -13,9 +13,8 @@ impl Solution {
         mut list1: Option<Box<ListNode>>,
         mut list2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        let mut result = ListNode::new(i32::MIN);
-        let mut cur = &mut result;
-
+        let mut ans = ListNode::new(i32::MIN);
+        let mut cur = &mut ans;
         while let (Some(node1), Some(node2)) = (&mut list1, &mut list2) {
             if node1.val >= node2.val {
                 cur.next = list2;
@@ -26,16 +25,13 @@ impl Solution {
             }
             cur = cur.next.as_mut().unwrap();
         }
-
         if list1.is_some() {
             cur.next = list1;
         }
-
         if list2.is_some() {
             cur.next = list2;
         }
-
-        result.next
+        ans.next
     }
 }
 

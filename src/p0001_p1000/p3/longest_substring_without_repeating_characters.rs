@@ -8,15 +8,13 @@ impl Solution {
     pub fn length_of_longest_substring(s: String) -> i32 {
         let mut last_char_idx = [0; 128]; // ASCII table
         let mut start = 0;
-        let mut max_len = 0;
-
+        let mut ans = 0;
         for (end, char) in s.chars().enumerate() {
             start = start.max(last_char_idx[char as usize]);
-            max_len = max_len.max(end - start + 1);
+            ans = ans.max(end - start + 1);
             last_char_idx[char as usize] = end + 1;
         }
-
-        max_len as i32
+        ans as i32
     }
 }
 
@@ -29,7 +27,6 @@ mod tests {
         let s = "abcabcbb".to_string();
         let result = Solution::length_of_longest_substring(s);
         let expected = 3;
-
         assert_eq!(result, expected);
     }
 
@@ -38,7 +35,6 @@ mod tests {
         let s = "bbbbb".to_string();
         let result = Solution::length_of_longest_substring(s);
         let expected = 1;
-
         assert_eq!(result, expected);
     }
 
@@ -47,7 +43,6 @@ mod tests {
         let s = "pwwkew".to_string();
         let result = Solution::length_of_longest_substring(s);
         let expected = 3;
-
         assert_eq!(result, expected);
     }
 }

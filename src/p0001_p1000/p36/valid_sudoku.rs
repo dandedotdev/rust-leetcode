@@ -9,24 +9,20 @@ impl Solution {
         let mut row = [0u16; 9];
         let mut col = [0u16; 9];
         let mut boxes = [0u16; 9];
-
         for (r, row_vec) in board.iter().enumerate() {
             for (c, &char) in row_vec.iter().enumerate() {
                 if let Some(d) = char.to_digit(10) {
                     let bit = 1 << d;
                     let box_idx = (r / 3) * 3 + (c / 3);
-
                     if (row[r] & bit) != 0 || (col[c] & bit) != 0 || (boxes[box_idx] & bit) != 0 {
                         return false;
                     }
-
                     row[r] |= bit;
                     col[c] |= bit;
                     boxes[box_idx] |= bit;
                 }
             }
         }
-
         true
     }
 }
@@ -49,7 +45,6 @@ mod tests {
             vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
         ];
         let result = Solution::is_valid_sudoku(board);
-
         assert!(result);
     }
 
@@ -67,7 +62,6 @@ mod tests {
             vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
         ];
         let result = Solution::is_valid_sudoku(board);
-
         assert!(!result);
     }
 }

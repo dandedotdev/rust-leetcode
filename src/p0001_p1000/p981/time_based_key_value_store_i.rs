@@ -25,22 +25,18 @@ impl TimeMap {
         let Some(values) = self.map.get(&key) else {
             return String::default();
         };
-
-        let mut result = "";
+        let mut ans = "";
         let (mut left, mut right) = (0, values.len());
-
         while left < right {
             let mid = (left + right) >> 1;
-
             if values[mid].0 <= timestamp {
-                result = &values[mid].1;
+                ans = &values[mid].1;
                 left = mid + 1;
             } else {
                 right = mid;
             }
         }
-
-        result.to_string()
+        ans.to_string()
     }
 }
 
@@ -51,11 +47,11 @@ mod tests {
     #[test]
     fn test_case_1() {
         let mut time_map = TimeMap::new();
-        time_map.set(String::from("foo"), String::from("bar"), 1);
-        time_map.get(String::from("foo"), 1);
-        time_map.get(String::from("foo"), 3);
-        time_map.set(String::from("foo"), String::from("bar2"), 4);
-        time_map.get(String::from("foo"), 4);
-        time_map.get(String::from("foo"), 5);
+        time_map.set("foo".to_string(), "bar".to_string(), 1);
+        time_map.get("foo".to_string(), 1);
+        time_map.get("foo".to_string(), 3);
+        time_map.set("foo".to_string(), "bar2".to_string(), 4);
+        time_map.get("foo".to_string(), 4);
+        time_map.get("foo".to_string(), 5);
     }
 }

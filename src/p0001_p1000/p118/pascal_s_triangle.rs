@@ -6,19 +6,15 @@ pub struct Solution;
 
 impl Solution {
     pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
-        let mut result: Vec<Vec<i32>> = vec![vec![1]];
-
+        let mut ans: Vec<Vec<i32>> = vec![vec![1]];
         for i in 1..num_rows as usize {
             let mut row = vec![1; i + 1];
-
             for (j, item) in row.iter_mut().enumerate().take(i).skip(1) {
-                *item = result[i - 1][j - 1] + result[i - 1][j];
+                *item = ans[i - 1][j - 1] + ans[i - 1][j];
             }
-
-            result.push(row);
+            ans.push(row);
         }
-
-        result
+        ans
     }
 }
 
@@ -37,7 +33,6 @@ mod tests {
             vec![1, 3, 3, 1],
             vec![1, 4, 6, 4, 1],
         ];
-
         assert_eq!(result, expected);
     }
 
@@ -46,7 +41,6 @@ mod tests {
         let num_rows = 1;
         let result = Solution::generate(num_rows);
         let expected = vec![vec![1]];
-
         assert_eq!(result, expected);
     }
 }

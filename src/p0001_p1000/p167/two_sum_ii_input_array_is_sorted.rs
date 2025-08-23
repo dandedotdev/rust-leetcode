@@ -9,16 +9,14 @@ pub struct Solution;
 impl Solution {
     pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
         if numbers.is_empty() {
-            return vec![];
+            return Vec::new();
         }
-
         let (mut left, mut right) = (0, numbers.len() - 1);
-
         loop {
             match (numbers[left] + numbers[right]).cmp(&target) {
                 Ordering::Equal => {
                     return vec![(left + 1) as i32, (right + 1) as i32];
-                }
+                },
                 Ordering::Less => left += 1,
                 Ordering::Greater => right -= 1,
             }
@@ -36,7 +34,6 @@ mod tests {
         let target = 9;
         let result = Solution::two_sum(numbers, target);
         let expected = vec![1, 2];
-
         assert_eq!(result, expected);
     }
 
@@ -46,7 +43,6 @@ mod tests {
         let target = 6;
         let result = Solution::two_sum(numbers, target);
         let expected = vec![1, 3];
-
         assert_eq!(result, expected);
     }
 
@@ -56,7 +52,6 @@ mod tests {
         let target = -1;
         let result = Solution::two_sum(numbers, target);
         let expected = vec![1, 2];
-
         assert_eq!(result, expected);
     }
 }

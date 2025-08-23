@@ -9,7 +9,6 @@ pub struct Solution;
 impl Solution {
     pub fn contains_duplicate(nums: Vec<i32>) -> bool {
         let mut counts = HashMap::new();
-
         !nums.into_iter().all(|n| counts.insert(n, 1).is_none())
     }
 }
@@ -22,7 +21,6 @@ mod tests {
     fn test_case_1() {
         let nums = vec![1, 2, 3, 1];
         let result = Solution::contains_duplicate(nums);
-
         assert!(result);
     }
 
@@ -30,7 +28,6 @@ mod tests {
     fn test_case_2() {
         let nums = vec![1, 2, 3, 4];
         let result = Solution::contains_duplicate(nums);
-
         assert!(!result);
     }
 
@@ -38,7 +35,6 @@ mod tests {
     fn test_case_3() {
         let nums = vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
         let result = Solution::contains_duplicate(nums);
-
         assert!(result);
     }
 }

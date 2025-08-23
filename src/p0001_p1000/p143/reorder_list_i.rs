@@ -30,13 +30,13 @@ impl Solution {
         let second_half = cur.next.take();
         let reversed_second_half = ReverseLinkedListSolution::reverse_list(second_half);
         // merge the two halves
-        let mut first = head.as_mut().unwrap();
-        let mut second = reversed_second_half;
-        while let Some(second_node) = second {
-            let temp = first.next.take();
-            first.next = Some(second_node);
-            first = first.next.as_mut().unwrap();
-            second = temp;
+        let mut first_half = head.as_mut().unwrap();
+        let mut second_half = reversed_second_half;
+        while let Some(second_node) = second_half {
+            let temp = first_half.next.take();
+            first_half.next = Some(second_node);
+            first_half = first_half.next.as_mut().unwrap();
+            second_half = temp;
         }
     }
 }

@@ -9,11 +9,9 @@ impl Solution {
         if num <= 0 {
             return false;
         }
-
         while num % 4 == 0 {
             num /= 4;
         }
-
         num == 1
     }
 }
@@ -26,7 +24,6 @@ mod tests {
     fn test_case_1() {
         let num = 16;
         let result = Solution::is_power_of_four(num);
-
         assert!(result);
     }
 
@@ -34,7 +31,6 @@ mod tests {
     fn test_case_2() {
         let num = 5;
         let result = Solution::is_power_of_four(num);
-
         assert!(!result);
     }
 
@@ -42,7 +38,6 @@ mod tests {
     fn test_case_3() {
         let num = 1;
         let result = Solution::is_power_of_four(num);
-
         assert!(result);
     }
 }

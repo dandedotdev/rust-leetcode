@@ -8,8 +8,7 @@ impl Solution {
     pub fn make_fancy_string(s: String) -> String {
         let mut prev_char = '\0';
         let mut consecutive_count = 0;
-        let mut result = String::with_capacity(s.len());
-
+        let mut ans = String::with_capacity(s.len());
         for c in s.chars() {
             if c == prev_char {
                 if consecutive_count < 2 {
@@ -21,11 +20,9 @@ impl Solution {
                 prev_char = c;
                 consecutive_count = 1;
             }
-
-            result.push(c);
+            ans.push(c);
         }
-
-        result
+        ans
     }
 }
 
@@ -38,7 +35,6 @@ mod tests {
         let s = "leeetcode".to_string();
         let result = Solution::make_fancy_string(s);
         let expected = "leetcode".to_string();
-
         assert_eq!(result, expected);
     }
 
@@ -47,7 +43,6 @@ mod tests {
         let s = "aaabaaaa".to_string();
         let result = Solution::make_fancy_string(s);
         let expected = "aabaa".to_string();
-
         assert_eq!(result, expected);
     }
 
@@ -56,7 +51,6 @@ mod tests {
         let s = "aab".to_string();
         let result = Solution::make_fancy_string(s);
         let expected = "aab".to_string();
-
         assert_eq!(result, expected);
     }
 }

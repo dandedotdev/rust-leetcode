@@ -38,7 +38,6 @@ mod tests {
         let s = "aaaaabbc".to_string();
         let result = Solution::max_difference(s);
         let expected = 3;
-
         assert_eq!(result, expected);
     }
 
@@ -47,7 +46,6 @@ mod tests {
         let s = "abcabcab".to_string();
         let result = Solution::max_difference(s);
         let expected = 1;
-
         assert_eq!(result, expected);
     }
 }

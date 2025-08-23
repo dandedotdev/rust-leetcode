@@ -6,20 +6,17 @@ pub struct Solution;
 
 impl Solution {
     pub fn largest_good_integer(num: String) -> String {
-        let mut result = String::default();
+        let mut ans: String = String::default();
         let bytes = num.as_bytes();
-
         for i in 0..bytes.len() - 2 {
             if bytes[i] == bytes[i + 1] && bytes[i] == bytes[i + 2] {
                 let cur = &num[i..i + 3];
-
-                if cur > &result {
-                    result = cur.to_string();
+                if cur > &ans {
+                    ans = cur.to_string();
                 }
             }
         }
-
-        result
+        ans
     }
 }
 
@@ -29,22 +26,22 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let num = String::from("6777133339");
-        let expected = String::from("777");
+        let num = "6777133339".to_string();
+        let expected = "777".to_string();
         assert_eq!(Solution::largest_good_integer(num), expected);
     }
 
     #[test]
     fn test_case_2() {
-        let num = String::from("2300019");
-        let expected = String::from("000");
+        let num = "2300019".to_string();
+        let expected = "000".to_string();
         assert_eq!(Solution::largest_good_integer(num), expected);
     }
 
     #[test]
     fn test_case_3() {
-        let num = String::from("42352338");
-        let expected = String::from("");
+        let num = "42352338".to_string();
+        let expected = "".to_string();
         assert_eq!(Solution::largest_good_integer(num), expected);
     }
 }

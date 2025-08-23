@@ -16,7 +16,7 @@ impl Solution {
         match (list1, list2) {
             (None, None) => None,
             (Some(node), None) | (None, Some(node)) => Some(node),
-            (Some(node1), Some(node2)) => {
+            (Some(node1), Some(node2)) =>
                 if node1.val >= node2.val {
                     Some(Box::new(ListNode {
                         val: node2.val,
@@ -27,8 +27,7 @@ impl Solution {
                         val: node1.val,
                         next: Self::merge_two_lists(node1.next, Some(node2)),
                     }))
-                }
-            }
+                },
         }
     }
 }

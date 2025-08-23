@@ -7,8 +7,7 @@ pub struct Solution;
 impl Solution {
     pub fn product_except_self(nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
-        let mut result = vec![0; n];
-
+        let mut ans = vec![0; n];
         {
             let mut prefix = vec![1; n];
             let mut suffix = vec![1; n];
@@ -22,11 +21,10 @@ impl Solution {
             }
 
             for i in 0..n {
-                result[i] = prefix[i] * suffix[i];
+                ans[i] = prefix[i] * suffix[i];
             }
         }
-
-        result
+        ans
     }
 }
 
@@ -39,7 +37,6 @@ mod tests {
         let nums = vec![1, 2, 3, 4];
         let result = Solution::product_except_self(nums);
         let expected = vec![24, 12, 8, 6];
-
         assert_eq!(result, expected);
     }
 
@@ -48,7 +45,6 @@ mod tests {
         let nums = vec![-1, 1, 0, -3, 3];
         let result = Solution::product_except_self(nums);
         let expected = vec![0, 0, 9, 0, 0];
-
         assert_eq!(result, expected);
     }
 }

@@ -10,31 +10,24 @@ impl Solution {
     pub fn min_cost(basket1: Vec<i32>, basket2: Vec<i32>) -> i64 {
         let mut memo: HashMap<i32, i32> = HashMap::new();
         let mut min_cost = i32::MAX;
-
         for &fruit in basket1.iter() {
             *memo.entry(fruit).or_default() += 1;
             min_cost = min_cost.min(fruit);
         }
-
         for &fruit in basket2.iter() {
             *memo.entry(fruit).or_default() -= 1;
             min_cost = min_cost.min(fruit);
         }
-
         let mut to_swap = Vec::new();
-
         for (&fruit, &diff) in memo.iter() {
             if diff % 2 != 0 {
                 return -1;
             }
-
             for _ in 0..(diff.abs() / 2) {
                 to_swap.push(fruit);
             }
         }
-
         to_swap.sort_unstable();
-
         to_swap
             .iter()
             .take(to_swap.len() / 2)
@@ -54,7 +47,6 @@ mod tests {
         let basket2 = vec![1, 4, 1, 2];
         let result = Solution::min_cost(basket1, basket2);
         let expected = 1;
-
         assert_eq!(result, expected);
     }
 
@@ -64,7 +56,6 @@ mod tests {
         let basket2 = vec![3, 2, 5, 1];
         let result = Solution::min_cost(basket1, basket2);
         let expected = -1;
-
         assert_eq!(result, expected);
     }
 
@@ -74,7 +65,6 @@ mod tests {
         let basket2 = vec![5, 5, 5, 5, 3];
         let result = Solution::min_cost(basket1, basket2);
         let expected = 8;
-
         assert_eq!(result, expected);
     }
 }

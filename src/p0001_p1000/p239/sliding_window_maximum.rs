@@ -10,15 +10,13 @@ impl Solution {
     pub fn max_sliding_window(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let k = k as usize;
         let mut deque = VecDeque::new();
-        let mut result = vec![];
-
+        let mut ans = Vec::new();
         for i in 0..nums.len() {
             if let Some(&idx_front) = deque.front()
                 && idx_front + k <= i
             {
                 deque.pop_front();
             }
-
             while let Some(&idx_back) = deque.back() {
                 if nums[idx_back] < nums[i] {
                     deque.pop_back();
@@ -26,15 +24,12 @@ impl Solution {
                     break;
                 }
             }
-
             deque.push_back(i);
-
             if i + 1 >= k {
-                result.push(nums[*deque.front().unwrap()]);
+                ans.push(nums[*deque.front().unwrap()]);
             }
         }
-
-        result
+        ans
     }
 }
 
@@ -48,7 +43,6 @@ mod tests {
         let k = 3;
         let result = Solution::max_sliding_window(nums, k);
         let expected = vec![3, 3, 5, 5, 6, 7];
-
         assert_eq!(result, expected);
     }
 
@@ -58,7 +52,6 @@ mod tests {
         let k = 1;
         let result = Solution::max_sliding_window(nums, k);
         let expected = vec![1];
-
         assert_eq!(result, expected);
     }
 
@@ -68,7 +61,6 @@ mod tests {
         let k = 2;
         let result = Solution::max_sliding_window(nums, k);
         let expected = vec![4];
-
         assert_eq!(result, expected);
     }
 }

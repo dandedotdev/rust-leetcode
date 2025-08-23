@@ -1,6 +1,8 @@
-// <Idiomatic>
+// <Array, Binary Search>
 // Time: O(log n)
 // Space: O(1)
+
+// Idiomatic
 
 pub struct Solution;
 
@@ -23,7 +25,6 @@ mod tests {
         let target = 9;
         let result = Solution::search(nums, target);
         let expected = 4;
-
         assert_eq!(result, expected);
     }
 
@@ -33,7 +34,6 @@ mod tests {
         let target = 2;
         let result = Solution::search(nums, target);
         let expected = -1;
-
         assert_eq!(result, expected);
     }
 }

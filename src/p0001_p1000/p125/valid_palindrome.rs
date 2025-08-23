@@ -12,13 +12,11 @@ impl Solution {
         let len = chars.len();
         let first_half = &chars[..len / 2];
         let second_half = &chars[len - len / 2..];
-
         for (x, y) in first_half.iter().rev().zip(second_half) {
             if x != y {
                 return false;
             }
         }
-
         true
     }
 }
@@ -29,25 +27,22 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let s = String::from("A man, a plan, a canal: Panama");
+        let s = "A man, a plan, a canal: Panama".to_string();
         let result = Solution::is_palindrome(s);
-
         assert!(result);
     }
 
     #[test]
     fn test_case_2() {
-        let s = String::from("race a car");
+        let s = "race a car".to_string();
         let result = Solution::is_palindrome(s);
-
         assert!(!result);
     }
 
     #[test]
     fn test_case_3() {
-        let s = String::from(" ");
+        let s = " ".to_string();
         let result = Solution::is_palindrome(s);
-
         assert!(result);
     }
 }

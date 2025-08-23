@@ -16,8 +16,8 @@ impl Solution {
             cur = node.next.take();
             deque.push_back(node);
         }
-        let mut result = ListNode::new(0);
-        let (mut cur, mut is_front) = (&mut result, true);
+        let mut ans = ListNode::new(0);
+        let (mut cur, mut is_front) = (&mut ans, true);
         while !deque.is_empty() {
             if is_front {
                 cur.next = deque.pop_front();
@@ -27,7 +27,7 @@ impl Solution {
             is_front = !is_front;
             cur = cur.next.as_mut().unwrap();
         }
-        *head = result.next;
+        *head = ans.next;
     }
 }
 

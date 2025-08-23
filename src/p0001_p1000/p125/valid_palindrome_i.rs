@@ -9,19 +9,14 @@ pub struct Solution;
 impl Solution {
     pub fn is_palindrome(s: String) -> bool {
         let chars = s.to_clean_chars();
-
-        let mut left = 0;
-        let mut right = chars.len().saturating_sub(1);
-
+        let (mut left, mut right) = (0, chars.len().saturating_sub(1));
         while left < right {
             if chars[left] != chars[right] {
                 return false;
             }
-
             left += 1;
             right -= 1;
         }
-
         true
     }
 }
@@ -32,25 +27,22 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let s = String::from("A man, a plan, a canal: Panama");
+        let s = "A man, a plan, a canal: Panama".to_string();
         let result = Solution::is_palindrome(s);
-
         assert!(result);
     }
 
     #[test]
     fn test_case_2() {
-        let s = String::from("race a car");
+        let s = "race a car".to_string();
         let result = Solution::is_palindrome(s);
-
         assert!(!result);
     }
 
     #[test]
     fn test_case_3() {
-        let s = String::from(" ");
+        let s = " ".to_string();
         let result = Solution::is_palindrome(s);
-
         assert!(result);
     }
 }

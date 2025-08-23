@@ -7,26 +7,19 @@ pub struct Solution;
 impl Solution {
     pub fn count_max_or_subsets(nums: Vec<i32>) -> i32 {
         let possible_max = nums.iter().fold(0, |acc, &v| acc | v);
-
         Self::backtrack(&nums, 0, possible_max, 0)
     }
 
-    fn backtrack(nums: &[i32], idx: usize, max_bitwise_or: i32, current_bitwise_or: i32) -> i32 {
-        if current_bitwise_or == max_bitwise_or {
+    fn backtrack(nums: &[i32], idx: usize, max_bitwise_or: i32, cur_bitwise_or: i32) -> i32 {
+        if cur_bitwise_or == max_bitwise_or {
             // the number of subsets that can be formed with the remaining elements
             return 1 << (nums.len() - idx);
         }
-
         if idx == nums.len() {
             return 0;
         }
-
-        Self::backtrack(
-            nums,
-            idx + 1,
-            max_bitwise_or,
-            current_bitwise_or | nums[idx],
-        ) + Self::backtrack(nums, idx + 1, max_bitwise_or, current_bitwise_or)
+        Self::backtrack(nums, idx + 1, max_bitwise_or, cur_bitwise_or | nums[idx])
+            + Self::backtrack(nums, idx + 1, max_bitwise_or, cur_bitwise_or)
     }
 }
 
@@ -39,7 +32,6 @@ mod tests {
         let nums = vec![3, 1];
         let result = Solution::count_max_or_subsets(nums);
         let expected = 2;
-
         assert_eq!(result, expected);
     }
 
@@ -57,7 +49,6 @@ mod tests {
         let nums = vec![3, 2, 1, 5];
         let result = Solution::count_max_or_subsets(nums);
         let expected = 6;
-
         assert_eq!(result, expected);
     }
 }

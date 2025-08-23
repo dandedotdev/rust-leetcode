@@ -8,7 +8,6 @@ impl Solution {
     pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
         let mut merged: Vec<i32> = Vec::new();
         let (mut i, mut j) = (0, 0);
-
         while i < nums1.len() && j < nums2.len() {
             if nums1[i] < nums2[j] {
                 merged.push(nums1[i]);
@@ -18,23 +17,18 @@ impl Solution {
                 j += 1;
             }
         }
-
         while i < nums1.len() {
             merged.push(nums1[i]);
             i += 1;
         }
-
         while j < nums2.len() {
             merged.push(nums2[j]);
             j += 1;
         }
-
         let mid = merged.len() >> 1;
-
         if merged.len().is_multiple_of(2) {
             return (merged[mid - 1] + merged[mid]) as f64 / 2.0;
         }
-
         merged[mid] as f64
     }
 }
@@ -49,7 +43,6 @@ mod tests {
         let nums2 = vec![2];
         let result = Solution::find_median_sorted_arrays(nums1, nums2);
         let expected = 2.0;
-
         assert_eq!(result, expected);
     }
 
@@ -59,7 +52,6 @@ mod tests {
         let nums2 = vec![3, 4];
         let result = Solution::find_median_sorted_arrays(nums1, nums2);
         let expected = 2.5;
-
         assert_eq!(result, expected);
     }
 }

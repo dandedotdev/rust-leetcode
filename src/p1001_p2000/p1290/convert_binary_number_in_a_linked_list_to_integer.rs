@@ -8,14 +8,12 @@ pub struct Solution;
 
 impl Solution {
     pub fn get_decimal_value(mut head: Option<Box<ListNode>>) -> i32 {
-        let mut result = 0;
-
+        let mut ans = 0;
         while let Some(node) = head {
-            result = (result << 1) | node.val;
+            ans = (ans << 1) | node.val;
             head = node.next;
         }
-
-        result
+        ans
     }
 }
 
@@ -34,7 +32,6 @@ mod tests {
         }));
         let result = Solution::get_decimal_value(head);
         let expected = 5;
-
         assert_eq!(result, expected);
     }
 
@@ -43,7 +40,6 @@ mod tests {
         let head = Some(Box::new(ListNode::new(0)));
         let result = Solution::get_decimal_value(head);
         let expected = 0;
-
         assert_eq!(result, expected);
     }
 }

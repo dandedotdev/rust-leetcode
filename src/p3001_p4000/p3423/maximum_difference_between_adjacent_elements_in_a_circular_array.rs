@@ -21,7 +21,6 @@ mod tests {
         let nums = vec![1, 2, 4];
         let result = Solution::max_adjacent_distance(nums);
         let expected = 3;
-
         assert_eq!(result, expected);
     }
 
@@ -30,7 +29,6 @@ mod tests {
         let nums = vec![-5, -10, -5];
         let result = Solution::max_adjacent_distance(nums);
         let expected = 5;
-
         assert_eq!(result, expected);
     }
 }

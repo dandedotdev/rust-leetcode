@@ -11,17 +11,13 @@ impl Solution {
             .zip(speed)
             .map(|(pos, speed)| (pos, (target as f32 - pos as f32) / speed as f32))
             .collect::<Vec<(i32, f32)>>();
-
         cars.sort_unstable_by_key(|(pos, _)| std::cmp::Reverse(*pos));
-
         let mut fleets = Vec::new();
-
         for (_, arrival_time) in cars {
             if fleets.last().is_none_or(|top| *top < arrival_time) {
                 fleets.push(arrival_time);
             }
         }
-
         fleets.len() as i32
     }
 }
@@ -36,7 +32,6 @@ mod tests {
         let position = vec![10, 8, 0, 5, 3];
         let speed = vec![2, 4, 1, 1, 3];
         let expected = 3;
-
         assert_eq!(Solution::car_fleet(target, position, speed), expected);
     }
 
@@ -46,7 +41,6 @@ mod tests {
         let position = vec![3];
         let speed = vec![3];
         let expected = 1;
-
         assert_eq!(Solution::car_fleet(target, position, speed), expected);
     }
 
@@ -56,7 +50,6 @@ mod tests {
         let position = vec![0, 2, 4];
         let speed = vec![4, 2, 1];
         let expected = 1;
-
         assert_eq!(Solution::car_fleet(target, position, speed), expected);
     }
 }

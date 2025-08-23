@@ -9,19 +9,15 @@ impl Solution {
         if nums.len() == 1 || nums[0] < nums[nums.len() - 1] {
             return nums[0];
         }
-
         let (mut left, mut right) = (0, nums.len());
-
         while left < right {
             let mid = (left + right) >> 1;
-
             if nums[mid] < nums[0] {
                 right = mid;
             } else {
                 left = mid + 1;
             }
         }
-
         nums[left]
     }
 }
@@ -35,7 +31,6 @@ mod tests {
         let nums = vec![3, 4, 5, 1, 2];
         let result = Solution::find_min(nums);
         let expected = 1;
-
         assert_eq!(result, expected);
     }
 
@@ -44,7 +39,6 @@ mod tests {
         let nums = vec![4, 5, 6, 7, 0, 1, 2];
         let result = Solution::find_min(nums);
         let expected = 0;
-
         assert_eq!(result, expected);
     }
 
@@ -53,7 +47,6 @@ mod tests {
         let nums = vec![11, 13, 15, 17];
         let result = Solution::find_min(nums);
         let expected = 11;
-
         assert_eq!(result, expected);
     }
 }

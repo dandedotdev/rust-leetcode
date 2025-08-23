@@ -25,7 +25,6 @@ mod tests {
         let x = 'e';
         let result = Solution::find_words_containing(words, x);
         let expected = vec![0, 1];
-
         assert_eq!(result, expected);
     }
 
@@ -38,7 +37,6 @@ mod tests {
         let x = 'a';
         let result = Solution::find_words_containing(words, x);
         let expected = vec![0, 2];
-
         assert_eq!(result, expected);
     }
 
@@ -50,8 +48,7 @@ mod tests {
             .collect();
         let x = 'z';
         let result = Solution::find_words_containing(words, x);
-        let expected = vec![];
-
+        let expected = Vec::new();
         assert_eq!(result, expected);
     }
 }

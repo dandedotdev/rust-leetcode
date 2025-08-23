@@ -8,20 +8,17 @@ pub struct Solution;
 
 impl Solution {
     pub fn subarray_bitwise_ors(arr: Vec<i32>) -> i32 {
-        let mut current_or: Vec<i32> = vec![];
-        let mut result_or = HashSet::new();
-
+        let mut cur_or: Vec<i32> = Vec::new();
+        let mut ans_or = HashSet::new();
         for num in arr {
-            for cur in &mut current_or {
+            for cur in &mut cur_or {
                 *cur |= num;
             }
-
-            current_or.push(num);
-            current_or.dedup();
-            result_or.extend(current_or.iter().copied());
+            cur_or.push(num);
+            cur_or.dedup();
+            ans_or.extend(cur_or.iter().copied());
         }
-
-        result_or.len() as i32
+        ans_or.len() as i32
     }
 }
 
@@ -34,7 +31,6 @@ mod tests {
         let arr = vec![0];
         let result = Solution::subarray_bitwise_ors(arr);
         let expected = 1;
-
         assert_eq!(result, expected);
     }
 
@@ -43,7 +39,6 @@ mod tests {
         let arr = vec![1, 1, 2];
         let result = Solution::subarray_bitwise_ors(arr);
         let expected = 3;
-
         assert_eq!(result, expected);
     }
 
@@ -52,7 +47,6 @@ mod tests {
         let arr = vec![1, 2, 4];
         let result = Solution::subarray_bitwise_ors(arr);
         let expected = 6;
-
         assert_eq!(result, expected);
     }
 
@@ -64,7 +58,6 @@ mod tests {
         ];
         let result = Solution::subarray_bitwise_ors(arr);
         let expected = 38;
-
         assert_eq!(result, expected);
     }
 }

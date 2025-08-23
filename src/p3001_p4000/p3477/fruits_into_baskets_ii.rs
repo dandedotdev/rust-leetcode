@@ -7,14 +7,12 @@ pub struct Solution;
 impl Solution {
     pub fn num_of_unplaced_fruits(fruits: Vec<i32>, mut baskets: Vec<i32>) -> i32 {
         let mut alloted_count = 0;
-
         for &fruit in fruits.iter() {
             if let Some(basket) = baskets.iter_mut().find(|b| **b >= fruit) {
                 *basket = -1; // mark as placed
                 alloted_count += 1;
             }
         }
-
         (fruits.len() - alloted_count) as i32
     }
 }
@@ -29,7 +27,6 @@ mod tests {
         let baskets = vec![3, 5, 4];
         let result = Solution::num_of_unplaced_fruits(fruits, baskets);
         let expected = 1;
-
         assert_eq!(result, expected);
     }
 
@@ -39,7 +36,6 @@ mod tests {
         let baskets = vec![6, 4, 7];
         let result = Solution::num_of_unplaced_fruits(fruits, baskets);
         let expected = 0;
-
         assert_eq!(result, expected);
     }
 
@@ -49,7 +45,6 @@ mod tests {
         let baskets = vec![1, 8];
         let result = Solution::num_of_unplaced_fruits(fruits, baskets);
         let expected = 1;
-
         assert_eq!(result, expected);
     }
 }
