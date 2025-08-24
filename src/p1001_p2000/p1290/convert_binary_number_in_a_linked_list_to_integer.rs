@@ -20,16 +20,11 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::structs::singly_linked_list::LinkedListExt;
 
     #[test]
     fn test_case_1() {
-        let head = Some(Box::new(ListNode {
-            val: 1,
-            next: Some(Box::new(ListNode {
-                val: 0,
-                next: Some(Box::new(ListNode::new(1))),
-            })),
-        }));
+        let head = Option::<Box<ListNode>>::from_vec(vec![1, 0, 1]);
         let result = Solution::get_decimal_value(head);
         let expected = 5;
         assert_eq!(result, expected);
@@ -37,7 +32,7 @@ mod tests {
 
     #[test]
     fn test_case_2() {
-        let head = Some(Box::new(ListNode::new(0)));
+        let head = Option::<Box<ListNode>>::from_vec(vec![0]);
         let result = Solution::get_decimal_value(head);
         let expected = 0;
         assert_eq!(result, expected);
