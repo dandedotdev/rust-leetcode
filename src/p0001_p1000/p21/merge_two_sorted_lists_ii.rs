@@ -15,10 +15,10 @@ impl Solution {
     ) -> Option<Box<ListNode>> {
         let mut cur = &mut list1;
         while list2.is_some() {
-            if cur.is_none() || list2.as_ref()?.val < cur.as_ref()?.val {
+            if cur.is_none() || list2.as_ref().unwrap().val < cur.as_ref().unwrap().val {
                 std::mem::swap(cur, &mut list2);
             }
-            cur = &mut cur.as_mut()?.next;
+            cur = &mut cur.as_mut().unwrap().next;
         }
         list1
     }
