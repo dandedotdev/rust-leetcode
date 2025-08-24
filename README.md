@@ -18,6 +18,7 @@ Solving Leetcode problems with Rust.
 ## Problem List
 
 - [1. Two Sum `Easy`](./src/p0001_p1000/p1/two_sum.rs)
+- [2. Add Two Numbers `Medium`](./src/p0001_p1000/p2/add_two_numbers.rs)
 - [3. Longest Substring Without Repeating Characters `Medium`](./src/p0001_p1000/p3/longest_substring_without_repeating_characters.rs)
 - [4. Median of Two Sorted Arrays `Hard`](./src/p0001_p1000/p4/mod.rs)
 - [7. Reverse Integer `Medium`](./src/p0001_p1000/p7/reverse_integer.rs)

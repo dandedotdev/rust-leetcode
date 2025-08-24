@@ -7,7 +7,7 @@ words: [
     # ===== Dev ===== #
     "deque",
     "nums",
-    "recr", # recursive/recursion
+    "recr", # recursion/recursive
     "strs",
     "subarray",
     "subarrays",
