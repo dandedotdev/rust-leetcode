@@ -62,6 +62,7 @@ Solving Leetcode problems with Rust.
 - [898. Bitwise ORs of Subarrays `Medium`](./src/p0001_p1000/p898/bitwise_ors_of_subarrays.rs)
 - [981. Time Based Key-Value Store `Medium`](./src/p0001_p1000/p981/mod.rs)
 - [1290. Convert Binary Number in a Linked List to Integer `Easy`](./src/p1001_p2000/p1290/convert_binary_number_in_a_linked_list_to_integer.rs)
+- [1493. Longest Subarray of 1's After Deleting One Element `Medium`](./src/p1001_p2000/p1493/longest_subarray_of_1s_after_deleting_one_element.rs)
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)
 - [2044. Count Number of Maximum Bitwise-OR Subsets `Medium`](./src/p2001_p3000/p2044/count_number_of_maximum_bitwise_or_subsets.rs)
 - [2264. Largest 3-Same-Digit Number in String `Easy`](./src/p2001_p3000/p2264/mod.rs)
