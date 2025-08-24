@@ -11,14 +11,14 @@ pub struct Solution;
 impl Solution {
     pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
         let count = std::iter::successors(head.as_ref(), |node| node.next.as_ref()).count();
-        let mut dummy = Some(Box::new(ListNode {
+        let mut dummy = Box::new(ListNode {
             val: -1,
             next: head,
-        }));
-        let mut prev =
-            (0..count - n as usize).fold(dummy.as_mut(), |cur, _| cur.unwrap().next.as_mut());
-        prev.unwrap().next = prev.as_mut().unwrap().next.as_mut().unwrap().next.take();
-        dummy.unwrap().next
+        });
+        let prev =
+            (0..count - n as usize).fold(dummy.as_mut(), |cur, _| cur.next.as_mut().unwrap());
+        prev.next = prev.next.as_mut().unwrap().next.take();
+        dummy.next
     }
 }
 
