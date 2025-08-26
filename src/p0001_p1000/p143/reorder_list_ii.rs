@@ -11,23 +11,17 @@ pub struct Solution;
 
 impl Solution {
     pub fn reorder_list(head: &mut Option<Box<ListNode>>) {
-        if head.is_none() || head.as_ref().unwrap().next.is_none() {
-            return;
-        }
-        // split the list into two halves
-        let mut len = 0;
-        let mut cur = head.as_ref();
-        while let Some(node) = cur {
-            len += 1;
-            cur = node.next.as_ref();
+        let ptr = head.clone();
+        let (mut fast, mut slow) = (ptr.as_ref(), head.as_mut());
+        while let Some(node) = fast {
+            if node.next.is_none() || node.next.as_ref().unwrap().next.is_none() {
+                break;
+            }
+            fast = node.next.as_ref().unwrap().next.as_ref();
+            slow = slow.unwrap().next.as_mut();
         }
         // reverse the second half
-        let mid = len >> 1;
-        let mut cur = head.as_mut().unwrap();
-        for _ in 0..mid - 1 {
-            cur = cur.next.as_mut().unwrap();
-        }
-        let second_half = cur.next.take();
+        let second_half = slow.unwrap().next.take();
         let reversed_second_half = ReverseLinkedListSolution::reverse_list(second_half);
         // merge the two halves
         let (mut first_half, mut second_half) = (head.as_mut().unwrap(), reversed_second_half);
