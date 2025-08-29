@@ -1,3 +1,3 @@
-mod merge_two_sorted_lists;
+pub mod merge_two_sorted_lists;
 mod merge_two_sorted_lists_i;
 mod merge_two_sorted_lists_ii;
