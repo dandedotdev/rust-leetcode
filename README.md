@@ -43,6 +43,7 @@ Solving Leetcode problems with Rust.
 - [128. Longest Consecutive Sequence `Medium`](./src/p0001_p1000/p128/mod.rs)
 - [136. Single Number `Easy`](./src/p0001_p1000/p136/single_number.rs)
 - [143. Reorder List `Medium`](./src/p0001_p1000/p143/mod.rs)
+- [146. LRU Cache `Medium`](./src/p0001_p1000/p146/lru_cache.rs)
 - [150. Evaluate Reverse Polish Notation `Medium`](./src/p0001_p1000/p150/evaluate_reverse_polish_notation.rs)
 - [153. Find Minimum in Rotated Sorted Array `Medium`](./src/p0001_p1000/p153/mod.rs)
 - [155. Min Stack `Medium`](./src/p0001_p1000/p155/min_stack.rs)
