@@ -57,6 +57,7 @@ Solving Leetcode problems with Rust.
 - [238. Product of Array Except Self `Medium`](./src/p0001_p1000/p238/product_of_array_except_self.rs)
 - [239. Sliding Window Maximum `Hard`](./src/p0001_p1000/p239/sliding_window_maximum.rs)
 - [242. Valid Anagram `Easy`](./src/p0001_p1000/p242/valid_anagram.rs)
+- [268. Missing Number `Easy`](./src/p0001_p1000/p268/mod.rs)
 - [271. Encode and Decode Strings `Medium`](./src/p0001_p1000/p271/encode_and_decode_strings.rs)
 - [287. Find the Duplicate Number `Medium`](./src/p0001_p1000/p287/mod.rs)
 - [338. Counting Bits `Easy`](./src/p0001_p1000/p338/counting_bits.rs)
