@@ -6,7 +6,7 @@ pub struct Solution;
 
 impl Solution {
     pub fn reverse_bits(n: i32) -> i32 {
-        (0..32).fold(0, |ans, bit| (ans << 1) | ((n >> bit) & 1))
+        (0..i32::BITS).fold(0, |ans, bit| (ans << 1) | ((n >> bit) & 1))
     }
 }
 
