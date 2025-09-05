@@ -63,6 +63,7 @@ Solving Leetcode problems with Rust.
 - [338. Counting Bits `Easy`](./src/p0001_p1000/p338/counting_bits.rs)
 - [342. Power of Four `Easy`](./src/p0001_p1000/p342/power_of_four.rs)
 - [347. Top K Frequent Elements `Medium`](./src/p0001_p1000/p347/mod.rs)
+- [371. Sum of Two Integers `Medium`](./src/p0001_p1000/p371/sum_of_two_integers.rs)
 - [424. Longest Repeating Character Replacement `Medium`](./src/p0001_p1000/p424/longest_repeating_character_replacement.rs)
 - [567. Permutation in String `Medium`](./src/p0001_p1000/p567/mod.rs)
 - [704. Binary Search `Easy`](./src/p0001_p1000/p704/mod.rs)

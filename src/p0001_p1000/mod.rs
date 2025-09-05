@@ -46,6 +46,7 @@ mod p287;
 mod p338;
 mod p342;
 mod p347;
+mod p371;
 mod p424;
 mod p567;
 mod p704;
