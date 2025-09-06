@@ -1,18 +1,17 @@
 //! Constraint: Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
 // <Math>
-// Time: O(log(k))
+// Time: O(log10 x)
 // Space: O(1)
 
 pub struct Solution;
 
 impl Solution {
-    pub fn reverse(x: i32) -> i32 {
+    pub fn reverse(mut x: i32) -> i32 {
         let mut ans: i32 = 0;
-        let mut num = x;
-        while num != 0 {
-            let digit = num % 10;
-            num /= 10;
+        while x != 0 {
+            let digit = x % 10;
+            x /= 10;
             // faster than `checked_mul(10)`
             if ans > i32::MAX / 10 || (ans == i32::MAX / 10 && digit > 7) {
                 return 0;
