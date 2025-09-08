@@ -30,6 +30,7 @@ Solving Leetcode problems with Rust.
 - [21. Merge Two Sorted Lists `Easy`](./src/p0001_p1000/p21/mod.rs)
 - [22. Generate Parentheses `Medium`](./src/p0001_p1000/p22/generate_parentheses.rs)
 - [23. Merge k Sorted Lists `Hard`](./src/p0001_p1000/p23/merge_k_sorted_lists.rs)
+- [25. Reverse Nodes in k-Group `Hard`](./src/p0001_p1000/p25/reverse_nodes_in_k_group.rs)
 - [33. Search in Rotated Sorted Array `Medium`](./src/p0001_p1000/p33/search_in_rotated_sorted_array.rs)
 - [36. Valid Sudoku `Medium`](./src/p0001_p1000/p36/valid_sudoku.rs)
 - [42. Trapping Rain Water `Hard`](./src/p0001_p1000/p42/trapping_rain_water.rs)
