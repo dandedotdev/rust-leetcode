@@ -54,6 +54,7 @@ mod p371;
 mod p424;
 mod p543;
 mod p567;
+mod p572;
 mod p704;
 mod p739;
 mod p853;

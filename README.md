@@ -71,6 +71,7 @@ Solving Leetcode problems with Rust.
 - [424. Longest Repeating Character Replacement `Medium`](./src/p0001_p1000/p424/longest_repeating_character_replacement.rs)
 - [543. Diameter of Binary Tree `Easy`](./src/p0001_p1000/p543/diameter_of_binary_tree.rs)
 - [567. Permutation in String `Medium`](./src/p0001_p1000/p567/mod.rs)
+- [572. Subtree of Another Tree `Easy`](./src/p0001_p1000/p572/subtree_of_another_tree.rs)
 - [704. Binary Search `Easy`](./src/p0001_p1000/p704/mod.rs)
 - [739. Daily Temperatures `Medium`](./src/p0001_p1000/p739/daily_temperatures.rs)
 - [853. Car Fleet `Medium`](./src/p0001_p1000/p853/car_fleet.rs)
