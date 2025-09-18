@@ -15,8 +15,8 @@ impl Solution {
         Self::dfs(root, 0)
     }
 
-    fn dfs(root: Option<Rc<RefCell<TreeNode>>>, depth: i32) -> i32 {
-        match root {
+    fn dfs(node: Option<Rc<RefCell<TreeNode>>>, depth: i32) -> i32 {
+        match node {
             None => depth,
             Some(node) => {
                 let depth_left = Self::dfs(node.borrow().left.clone(), depth + 1);
