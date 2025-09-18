@@ -8,10 +8,5 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
-  "editor.formatOnSave": true,
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#432701",
-    "titleBar.activeBackground": "#5E3702",
-    "titleBar.activeForeground": "#FFFAF3"
-  }
+  "editor.formatOnSave": true
 }
