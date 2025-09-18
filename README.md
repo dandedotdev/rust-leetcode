@@ -40,6 +40,7 @@ Solving Leetcode problems with Rust.
 - [76. Minimum Window Substring `Hard`](./src/p0001_p1000/p76/minimum_window_substring.rs)
 - [84. Largest Rectangle in Histogram `Hard`](./src/p0001_p1000/p84/mod.rs)
 - [100. Same Tree `Easy`](./src/p0001_p1000/p100/mod.rs)
+- [102. Binary Tree Level Order Traversal `Medium`](./src/p0001_p1000/p102/binary_tree_level_order_traversal.rs)
 - [104. Maximum Depth of Binary Tree `Easy`](./src/p0001_p1000/p104/mod.rs)
 - [110. Balanced Binary Tree `Easy`](./src/p0001_p1000/p110/balanced_binary_tree.rs)
 - [118. Pascal's Triangle `Easy`](./src/p0001_p1000/p118/pascal_s_triangle.rs)
