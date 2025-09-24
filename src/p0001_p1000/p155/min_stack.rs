@@ -51,13 +51,13 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let mut min_stack = MinStack::new();
-        min_stack.push(-2);
-        min_stack.push(0);
-        min_stack.push(-3);
-        assert_eq!(min_stack.get_min(), -3);
-        min_stack.pop();
-        assert_eq!(min_stack.top(), 0);
-        assert_eq!(min_stack.get_min(), -2);
+        let mut min_stk = MinStack::new();
+        min_stk.push(-2);
+        min_stk.push(0);
+        min_stk.push(-3);
+        assert_eq!(min_stk.get_min(), -3);
+        min_stk.pop();
+        assert_eq!(min_stk.top(), 0);
+        assert_eq!(min_stk.get_min(), -2);
     }
 }

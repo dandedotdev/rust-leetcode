@@ -13,13 +13,13 @@ pub struct Solution;
 impl Solution {
     pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         let mut ans = 0;
-        let mut stack = vec![(root, 0)];
-        while let Some((node, depth)) = stack.pop() {
+        let mut stk = vec![(root, 0)];
+        while let Some((node, depth)) = stk.pop() {
             if let Some(node) = node {
                 let depth = depth + 1;
                 ans = ans.max(depth);
-                stack.push((node.borrow().left.clone(), depth));
-                stack.push((node.borrow().right.clone(), depth));
+                stk.push((node.borrow().left.clone(), depth));
+                stk.push((node.borrow().right.clone(), depth));
             }
         }
         ans
