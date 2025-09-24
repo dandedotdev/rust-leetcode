@@ -61,6 +61,7 @@ Solving Leetcode problems with Rust.
 - [206. Reverse Linked List `Easy`](./src/p0001_p1000/p206/mod.rs)
 - [217. Contains Duplicate `Easy`](./src/p0001_p1000/p217/contains_duplicate.rs)
 - [226. Invert Binary Tree `Easy`](./src/p0001_p1000/p226/mod.rs)
+- [230. Kth Smallest Element in a BST `Medium`](./src/p0001_p1000/p230/kth_smallest_element_in_a_bst.rs)
 - [235. Lowest Common Ancestor of a Binary Search Tree `Medium`](./src/p0001_p1000/p235/mod.rs)
 - [238. Product of Array Except Self `Medium`](./src/p0001_p1000/p238/product_of_array_except_self.rs)
 - [239. Sliding Window Maximum `Hard`](./src/p0001_p1000/p239/sliding_window_maximum.rs)
