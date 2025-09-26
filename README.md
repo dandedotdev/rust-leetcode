@@ -43,6 +43,7 @@ Solving Leetcode problems with Rust.
 - [100. Same Tree `Easy`](./src/p0001_p1000/p100/mod.rs)
 - [102. Binary Tree Level Order Traversal `Medium`](./src/p0001_p1000/p102/binary_tree_level_order_traversal.rs)
 - [104. Maximum Depth of Binary Tree `Easy`](./src/p0001_p1000/p104/mod.rs)
+- [105. Construct Binary Tree from Preorder and Inorder Traversal `Medium`](./src/p0001_p1000/p105/construct_binary_tree_from_preorder_and_inorder_traversal.rs)
 - [110. Balanced Binary Tree `Easy`](./src/p0001_p1000/p110/balanced_binary_tree.rs)
 - [118. Pascal's Triangle `Easy`](./src/p0001_p1000/p118/pascal_s_triangle.rs)
 - [121. Best Time to Buy and Sell Stock `Easy`](./src/p0001_p1000/p121/best_time_to_buy_and_sell_stock.rs)

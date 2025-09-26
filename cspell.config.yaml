@@ -6,7 +6,10 @@ dictionaries: []
 words: [
     # ===== Dev ===== #
     "deque",
+    "inorder",
     "nums",
+    "postorder",
+    "preorder",
     "recr", # recursion/recursive
     "strs",
     "subarray",
