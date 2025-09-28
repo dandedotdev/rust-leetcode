@@ -17,10 +17,13 @@ Solving Leetcode problems with Rust.
 ## Problem Categories
 
 - [Huahua's Leetcode Problem List](https://zxi.mytechroad.com/blog/leetcode-problem-categories/)
-- [Line Sweep Problems](https://leetcode.com/problem-list/mzw3cyy6/)
 - [NeetCode Practice](https://neetcode.io/practice)
 
 ## Problem List
+
+- [Line Sweep Problems](https://leetcode.com/problem-list/mzw3cyy6/)
+
+## Problems
 
 - [1. Two Sum `Easy`](./src/p0001_p1000/p1/two_sum.rs)
 - [2. Add Two Numbers `Medium`](./src/p0001_p1000/p2/add_two_numbers.rs)
@@ -100,6 +103,7 @@ Solving Leetcode problems with Rust.
 - [2411. Smallest Subarrays with Maximum Bitwise-OR `Medium`](./src/p2001_p3000/p2411/smallest_subarrays_with_maximum_bitwise_or.rs)
 - [2419. Longest Subarray With Maximum Bitwise AND `Medium`](./src/p2001_p3000/p2419/longest_subarray_with_maximum_bitwise_and.rs)
 - [2561. Rearranging Fruits `Hard`](./src/p2001_p3000/p2561/rearranging_fruits.rs)
+- [2848. Points That Intersect with Cars `Easy`](./src/p2001_p3000/p2848/points_that_intersect_with_cars.rs)
 - [2942. Find Words Containing Character `Easy`](./src/p2001_p3000/p2942/find_words_containing_characters.rs)
 - [3000. Longest Increasing Subsequence `Medium`](./src/p2001_p3000/p3000/mod.rs)
 - [3024. Type of Triangle `Easy`](./src/p3001_p4000/p3024/type_of_triangle.rs)
