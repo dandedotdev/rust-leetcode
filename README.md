@@ -43,6 +43,7 @@ Solving Leetcode problems with Rust.
 - [36. Valid Sudoku `Medium`](./src/p0001_p1000/p36/valid_sudoku.rs)
 - [42. Trapping Rain Water `Hard`](./src/p0001_p1000/p42/trapping_rain_water.rs)
 - [49. Group Anagrams `Medium`](./src/p0001_p1000/p49/group_anagrams.rs)
+- [56. Merge Intervals `Medium`](./src/p0001_p1000/p56/merge_intervals.rs)
 - [57. Insert Interval `Medium`](./src/p0001_p1000/p57/insert_interval.rs)
 - [73. Set Matrix Zeroes `Medium`](./src/p0001_p1000/p73/set_matrix_zeroes.rs)
 - [74. Search a 2D Matrix `Medium`](./src/p0001_p1000/p74/mod.rs)
