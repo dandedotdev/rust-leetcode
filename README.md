@@ -96,6 +96,7 @@ Solving Leetcode problems with Rust.
 - [1448. Count Good Nodes in Binary Tree `Medium`](./src/p1001_p2000/p1448/count_good_nodes_in_binary_tree.rs)
 - [1493. Longest Subarray of 1's After Deleting One Element `Medium`](./src/p1001_p2000/p1493/longest_subarray_of_1s_after_deleting_one_element.rs)
 - [1854. Maximum Population Year `Easy`](./src/p1001_p2000/p1854/mod.rs)
+- [1893. Check if All the Integers in a Range Are Covered `Easy`](./src/p1001_p2000/p1893/check_if_all_the_integers_in_a_range_are_covered.rs)
 - [1935. Maximum Number of Words You Can Type `Easy`](./src/p1001_p2000/p1935/maximum_number_of_words_you_can_type.rs)
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)
 - [2044. Count Number of Maximum Bitwise-OR Subsets `Medium`](./src/p2001_p3000/p2044/count_number_of_maximum_bitwise_or_subsets.rs)
