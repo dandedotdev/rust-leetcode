@@ -1,6 +1,6 @@
 // <Array, Hash Table, Prefix Sum>
 // Time: O(n)
-// Space: O(n)
+// Space: O(1)
 
 pub struct Solution;
 
