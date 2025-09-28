@@ -27,16 +27,15 @@ impl Solution {
         index_map: &HashMap<i32, usize>,
         range: (isize, isize), // (pre_start, pre_end)
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        if range.0 <= range.1 {
-            if let Some(&val) = preorder.next() {
-                if let Some(&idx) = index_map.get(&val) {
-                    return Some(Rc::new(RefCell::new(TreeNode {
-                        val,
-                        left: Self::build(preorder, index_map, (range.0, idx as isize - 1)),
-                        right: Self::build(preorder, index_map, (idx as isize + 1, range.1)),
-                    })));
-                }
-            }
+        if range.0 <= range.1
+            && let Some(&val) = preorder.next()
+            && let Some(&idx) = index_map.get(&val)
+        {
+            return Some(Rc::new(RefCell::new(TreeNode {
+                val,
+                left: Self::build(preorder, index_map, (range.0, idx as isize - 1)),
+                right: Self::build(preorder, index_map, (idx as isize + 1, range.1)),
+            })));
         }
         None
     }
