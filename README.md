@@ -81,6 +81,7 @@ Solving Leetcode problems with Rust.
 - [268. Missing Number `Easy`](./src/p0001_p1000/p268/mod.rs)
 - [271. Encode and Decode Strings `Medium`](./src/p0001_p1000/p271/encode_and_decode_strings.rs)
 - [287. Find the Duplicate Number `Medium`](./src/p0001_p1000/p287/mod.rs)
+- [297. Serialize and Deserialize Binary Tree `Hard`](./src/p0001_p1000/p297/serialize_and_deserialize_binary_tree.rs)
 - [338. Counting Bits `Easy`](./src/p0001_p1000/p338/counting_bits.rs)
 - [342. Power of Four `Easy`](./src/p0001_p1000/p342/power_of_four.rs)
 - [347. Top K Frequent Elements `Medium`](./src/p0001_p1000/p347/mod.rs)
