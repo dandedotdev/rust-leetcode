@@ -57,6 +57,7 @@ Solving Leetcode problems with Rust.
 - [110. Balanced Binary Tree `Easy`](./src/p0001_p1000/p110/balanced_binary_tree.rs)
 - [118. Pascal's Triangle `Easy`](./src/p0001_p1000/p118/pascal_s_triangle.rs)
 - [121. Best Time to Buy and Sell Stock `Easy`](./src/p0001_p1000/p121/best_time_to_buy_and_sell_stock.rs)
+- [124. Binary Tree Maximum Path Sum `Hard`](./src/p0001_p1000/p124/binary_tree_maximum_path_sum.rs)
 - [125. Valid Palindrome `Easy`](./src/p0001_p1000/p125/mod.rs)
 - [128. Longest Consecutive Sequence `Medium`](./src/p0001_p1000/p128/mod.rs)
 - [136. Single Number `Easy`](./src/p0001_p1000/p136/single_number.rs)
