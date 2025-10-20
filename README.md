@@ -103,6 +103,7 @@ Solving Leetcode problems with Rust.
 - [1893. Check if All the Integers in a Range Are Covered `Easy`](./src/p1001_p2000/p1893/mod.rs)
 - [1935. Maximum Number of Words You Can Type `Easy`](./src/p1001_p2000/p1935/maximum_number_of_words_you_can_type.rs)
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)
+- [2011. Final Value of Variable After Performing Operations `Easy`](./src/p2001_p3000/p2011/mod.rs)
 - [2044. Count Number of Maximum Bitwise-OR Subsets `Medium`](./src/p2001_p3000/p2044/count_number_of_maximum_bitwise_or_subsets.rs)
 - [2264. Largest 3-Same-Digit Number in String `Easy`](./src/p2001_p3000/p2264/mod.rs)
 - [2411. Smallest Subarrays with Maximum Bitwise-OR `Medium`](./src/p2001_p3000/p2411/smallest_subarrays_with_maximum_bitwise_or.rs)
