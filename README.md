@@ -106,6 +106,7 @@ Solving Leetcode problems with Rust.
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)
 - [2011. Final Value of Variable After Performing Operations `Easy`](./src/p2001_p3000/p2011/mod.rs)
 - [2044. Count Number of Maximum Bitwise-OR Subsets `Medium`](./src/p2001_p3000/p2044/count_number_of_maximum_bitwise_or_subsets.rs)
+- [2211. Count Collisions on a Road `Medium`](./src/p2001_p3000/p2211/count_collisions_on_a_road.rs)
 - [2264. Largest 3-Same-Digit Number in String `Easy`](./src/p2001_p3000/p2264/mod.rs)
 - [2411. Smallest Subarrays with Maximum Bitwise-OR `Medium`](./src/p2001_p3000/p2411/smallest_subarrays_with_maximum_bitwise_or.rs)
 - [2419. Longest Subarray With Maximum Bitwise AND `Medium`](./src/p2001_p3000/p2419/longest_subarray_with_maximum_bitwise_and.rs)
