@@ -100,6 +100,7 @@ Solving Leetcode problems with Rust.
 - [1290. Convert Binary Number in a Linked List to Integer `Easy`](./src/p1001_p2000/p1290/convert_binary_number_in_a_linked_list_to_integer.rs)
 - [1448. Count Good Nodes in Binary Tree `Medium`](./src/p1001_p2000/p1448/count_good_nodes_in_binary_tree.rs)
 - [1493. Longest Subarray of 1's After Deleting One Element `Medium`](./src/p1001_p2000/p1493/longest_subarray_of_1s_after_deleting_one_element.rs)
+- [1523. Count Odd Numbers in an Interval Range `Easy`](./src/p1001_p2000/p1523/count_odd_numbers_in_an_interval_range.rs)
 - [1854. Maximum Population Year `Easy`](./src/p1001_p2000/p1854/mod.rs)
 - [1893. Check if All the Integers in a Range Are Covered `Easy`](./src/p1001_p2000/p1893/mod.rs)
 - [1935. Maximum Number of Words You Can Type `Easy`](./src/p1001_p2000/p1935/maximum_number_of_words_you_can_type.rs)
