@@ -119,6 +119,7 @@ Solving Leetcode problems with Rust.
 - [3024. Type of Triangle `Easy`](./src/p3001_p4000/p3024/type_of_triangle.rs)
 - [3136. Valid Word `Easy`](./src/p3001_p4000/p3136/valid_word.rs)
 - [3423. Maximum Difference Between Adjacent Elements in a Circular Array `Easy`](./src/p3001_p4000/p3423/maximum_difference_between_adjacent_elements_in_a_circular_array.rs)
+- [3432. Count Partitions with Even Sum Difference `Easy`](./src/p3001_p4000/p3432/count_partitions_with_even_sum_difference.rs)
 - [3442. Maximum Difference Between Even and Odd Frequency I `Easy`](./src/p3001_p4000/p3442/mod.rs)
 - [3477. Fruits Into Baskets II `Easy`](./src/p3001_p4000/p3477/fruits_into_baskets_ii.rs)
 - [3479. Fruits Into Baskets III `Medium`](./src/p3001_p4000/p3479/fruits_into_baskets_iii.rs)
