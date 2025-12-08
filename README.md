@@ -103,6 +103,7 @@ Solving Leetcode problems with Rust.
 - [1523. Count Odd Numbers in an Interval Range `Easy`](./src/p1001_p2000/p1523/count_odd_numbers_in_an_interval_range.rs)
 - [1854. Maximum Population Year `Easy`](./src/p1001_p2000/p1854/mod.rs)
 - [1893. Check if All the Integers in a Range Are Covered `Easy`](./src/p1001_p2000/p1893/mod.rs)
+- [1925. Count Square Sum Triples `Easy`](./src/p1001_p2000/p1925/count_square_sum_triples_ii.rs)
 - [1935. Maximum Number of Words You Can Type `Easy`](./src/p1001_p2000/p1935/maximum_number_of_words_you_can_type.rs)
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)
 - [2011. Final Value of Variable After Performing Operations `Easy`](./src/p2001_p3000/p2011/mod.rs)

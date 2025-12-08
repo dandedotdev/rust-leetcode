@@ -4,5 +4,6 @@ mod p1493;
 mod p1523;
 mod p1854;
 mod p1893;
+mod p1925;
 mod p1935;
 mod p1957;
