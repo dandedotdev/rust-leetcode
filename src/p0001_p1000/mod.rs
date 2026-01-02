@@ -71,4 +71,5 @@ mod p739;
 mod p853;
 mod p875;
 mod p898;
+mod p961;
 mod p981;

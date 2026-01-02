@@ -96,6 +96,7 @@ Solving Leetcode problems with Rust.
 - [853. Car Fleet `Medium`](./src/p0001_p1000/p853/car_fleet.rs)
 - [875. Koko Eating Bananas `Medium`](./src/p0001_p1000/p875/mod.rs)
 - [898. Bitwise ORs of Subarrays `Medium`](./src/p0001_p1000/p898/bitwise_ors_of_subarrays.rs)
+- [961. N-Repeated Element in Size 2N Array `Easy`](./src/p0001_p1000/p961/n_repeated_element_in_size_2n_array.rs)
 - [981. Time Based Key-Value Store `Medium`](./src/p0001_p1000/p981/mod.rs)
 - [1290. Convert Binary Number in a Linked List to Integer `Easy`](./src/p1001_p2000/p1290/convert_binary_number_in_a_linked_list_to_integer.rs)
 - [1448. Count Good Nodes in Binary Tree `Medium`](./src/p1001_p2000/p1448/count_good_nodes_in_binary_tree.rs)
