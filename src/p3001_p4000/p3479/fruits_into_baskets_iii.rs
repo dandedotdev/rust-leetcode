@@ -68,6 +68,6 @@ mod tests {
 
     #[test]
     fn test_case_737() {
-        // O(n ** 2) TLE!
+        // O(n^2) TLE!
     }
 }
