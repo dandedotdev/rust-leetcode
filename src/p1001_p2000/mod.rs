@@ -1,3 +1,4 @@
+mod p1266;
 mod p1290;
 mod p1448;
 mod p1493;
