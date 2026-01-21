@@ -1,1 +1,1 @@
-mod construct_the_minimum_array_i;
+mod construct_the_minimum_bitwise_array_i;
