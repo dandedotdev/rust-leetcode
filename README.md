@@ -129,3 +129,4 @@ Solving Leetcode problems with Rust.
 - [3477. Fruits Into Baskets II `Easy`](./src/p3001_p4000/p3477/fruits_into_baskets_ii.rs)
 - [3479. Fruits Into Baskets III `Medium`](./src/p3001_p4000/p3479/fruits_into_baskets_iii.rs)
 - [3487. Maximum Unique Subarray Sum After Deletion `Easy`](./src/p3001_p4000/p3487/maximum_unique_subarray_sum_after_deletion.rs)
+- [3507. Minimum Pair Removal to Sort Array I `Easy`](./src/p3001_p4000/p3507/minimum_pair_removal_to_sort_array_i.rs)
