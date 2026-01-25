@@ -108,6 +108,7 @@ Solving Leetcode problems with Rust.
 - [1925. Count Square Sum Triples `Easy`](./src/p1001_p2000/p1925/count_square_sum_triples_ii.rs)
 - [1935. Maximum Number of Words You Can Type `Easy`](./src/p1001_p2000/p1935/maximum_number_of_words_you_can_type.rs)
 - [1957. Delete Characters to Make Fancy String `Easy`](./src/p1001_p2000/p1957/delete_characters_to_make_fancy_string.rs)
+- [1984. Minimum Difference Between Highest and Lowest of K Scores `Easy`](./src/p1001_p2000/p1984/minimum_difference_between_highest_and_lowest_of_k_scores.rs)
 - [2011. Final Value of Variable After Performing Operations `Easy`](./src/p2001_p3000/p2011/mod.rs)
 - [2044. Count Number of Maximum Bitwise-OR Subsets `Medium`](./src/p2001_p3000/p2044/count_number_of_maximum_bitwise_or_subsets.rs)
 - [2211. Count Collisions on a Road `Medium`](./src/p2001_p3000/p2211/count_collisions_on_a_road.rs)
