@@ -68,6 +68,7 @@ mod p567;
 mod p572;
 mod p704;
 mod p739;
+mod p762;
 mod p853;
 mod p875;
 mod p898;

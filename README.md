@@ -93,6 +93,7 @@ Solving Leetcode problems with Rust.
 - [572. Subtree of Another Tree `Easy`](./src/p0001_p1000/p572/subtree_of_another_tree.rs)
 - [704. Binary Search `Easy`](./src/p0001_p1000/p704/mod.rs)
 - [739. Daily Temperatures `Medium`](./src/p0001_p1000/p739/daily_temperatures.rs)
+- [762. Prime Number of Set Bits in Binary Representation `Easy`](./src/p0001_p1000/p762/prime_number_of_set_bits_in_binary_representation.rs)
 - [853. Car Fleet `Medium`](./src/p0001_p1000/p853/car_fleet.rs)
 - [875. Koko Eating Bananas `Medium`](./src/p0001_p1000/p875/mod.rs)
 - [898. Bitwise ORs of Subarrays `Medium`](./src/p0001_p1000/p898/bitwise_ors_of_subarrays.rs)
